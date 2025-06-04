@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Crear este archivo en: src/test/resources/extent-config.xml -->
+<extentreports>
+    <configuration>
+        <!-- Configuración del reporte -->
+        <theme>dark</theme>
+        <encoding>UTF-8</encoding>
+        <protocol>https</protocol>
+        
+        <!-- Información del documento -->
+        <documentTitle>Confuturo - Reporte de Automatización</documentTitle>
+        <reportName>YAML Validator - Test Results</reportName>
+        
+        <!-- Timeline habilitado -->
+        <timelineEnabled>true</timelineEnabled>
+        
+        <!-- Configuración de JavaScript/CSS -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    $('.brand-logo').text('Confuturo QA Team');
+                });
+            ]]>
+        </scripts>
+        
+        <styles>
+            <![CDATA[
+                .brand-logo {
+                    color: #2196F3 !important;
+                    font-weight: bold;
+                }
+                .card-panel.environment th:first-child {
+                    width: 30%;
+                }
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>

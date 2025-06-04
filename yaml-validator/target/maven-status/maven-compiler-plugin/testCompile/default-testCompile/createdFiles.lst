@@ -1,0 +1,6 @@
+com\confuturo\steps\YamlValidationSteps.class
+com\confuturo\test\SimpleYamlTest.class
+com\confuturo\AppTest.class
+com\confuturo\runners\CucumberRunner.class
+com\confuturo\utils\YamlReader.class
+com\confuturo\steps\JsonValidationSteps.class
