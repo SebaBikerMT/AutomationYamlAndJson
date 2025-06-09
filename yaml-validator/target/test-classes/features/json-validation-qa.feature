@@ -10,15 +10,20 @@ Característica: Validación de configuración del Backend.BackOffice.Zendesk
     Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json"
     Entonces imprimo el contenido del JSON para depuración
 
-  Escenario: Verificar la Url del Cliente
+  Escenario: Verificar datos mas relevantes del archivo
     Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager"
     Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json"
     Entonces el JSON debe contener el campo "Apis.UrlClients" con valor "http://api-clientes.qa.seguros.local/clientes/"
+    Y el JSON debe contener el campo "Apis.UrlProductos" con valor "http://api-productos.qa.seguros.local/"
+    Y el JSON debe contener el campo "Apis.UrlPayment" con valor "http://api.qa.seguros.local/payment-service/"
+    Y el JSON debe contener el campo "Keycloak.Url" con valor "http://auth-qa.confuturo.cl/auth"
+    Y el JSON debe contener el campo "Keycloak.Realm" con valor "confuturo-sso-qa"
 
-  Escenario: Verificar el modo de prueba
+
+  Escenario: Verificar que el documento no contiene enlaces a rutas equivocadas
     Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager"
     Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json"
     Entonces el JSON debe contener el campo "TestMode" con valor booleano "true"
     Y el archivo NO debe contener la palabra "prod"
-    Y el archivo NO debe contener la palabra "qa"
+    Y el archivo NO debe contener la palabra "development"
 
