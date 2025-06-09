@@ -23,6 +23,7 @@ public class JsonValidationSteps {
     private String rawJsonContent;  // Contenido crudo del JSON
     private JSONObject jsonContent;
     private List<String> validationErrors = new ArrayList<>(); // Lista para registrar errores
+    private String cleanedJsonContent; // Contenido JSON sin comentarios
     /* 
     @Before
     public void beforeScenario(io.cucumber.java.Scenario scenario) {
@@ -210,7 +211,7 @@ public class JsonValidationSteps {
     System.out.println("Palabra EXACTA que NO debe existir: '" + palabra + "'");
     System.out.println("Nota: Solo busca la palabra completa, no como parte de otras palabras");
     
-    if (rawJsonContent == null || rawJsonContent.isEmpty()) {
+    if (cleanedJsonContent == null || cleanedJsonContent.isEmpty()) {
         String errorMsg = "El contenido del archivo está vacío o no se ha cargado";
         System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
         validationErrors.add(errorMsg);
@@ -223,7 +224,7 @@ public class JsonValidationSteps {
     // Esto significa que "prod" NO coincidirá con "producto", "producir", etc.
     String patron = "\\b" + java.util.regex.Pattern.quote(palabra) + "\\b";
     java.util.regex.Pattern pattern = java.util.regex.Pattern.compile(patron, java.util.regex.Pattern.CASE_INSENSITIVE);
-    java.util.regex.Matcher matcher = pattern.matcher(rawJsonContent);
+    java.util.regex.Matcher matcher = pattern.matcher(cleanedJsonContent);
     
     boolean encontradaPalabraExacta = matcher.find();
     System.out.println("Patrón de búsqueda (palabra exacta): " + patron);
@@ -235,8 +236,8 @@ public class JsonValidationSteps {
         matcher.reset(); // Reiniciar matcher para encontrar todas las ocurrencias
         while (matcher.find() && ocurrencias.size() < 5) { // Máximo 5 ejemplos
             int inicio = Math.max(0, matcher.start() - 30);
-            int fin = Math.min(rawJsonContent.length(), matcher.end() + 30);
-            String contexto = rawJsonContent.substring(inicio, fin).replaceAll("\\s+", " ");
+            int fin = Math.min(cleanedJsonContent.length(), matcher.end() + 30);
+            String contexto = cleanedJsonContent.substring(inicio, fin).replaceAll("\\s+", " ");
             ocurrencias.add("..." + contexto + "...");
         }
         
@@ -248,18 +249,18 @@ public class JsonValidationSteps {
         System.out.println("✓ Correcto: La palabra EXACTA '" + palabra + "' NO fue encontrada");
         
         // Información adicional: verificar si existe como substring para debugging
-        if (rawJsonContent.toLowerCase().contains(palabra.toLowerCase())) {
+        if (cleanedJsonContent.toLowerCase().contains(palabra.toLowerCase())) {
             System.out.println("ℹ Nota informativa: La secuencia '" + palabra + "' SÍ aparece como parte de otras palabras, pero NO como palabra independiente");
             
             // Mostrar algunos ejemplos de dónde aparece como substring
-            String contenidoLower = rawJsonContent.toLowerCase();
+            String contenidoLower = cleanedJsonContent.toLowerCase();
             String palabraLower = palabra.toLowerCase();
             int index = contenidoLower.indexOf(palabraLower);
             int ejemplos = 0;
             while (index >= 0 && ejemplos < 3) {
                 int inicioContexto = Math.max(0, index - 15);
-                int finContexto = Math.min(rawJsonContent.length(), index + palabra.length() + 15);
-                String contextoEjemplo = rawJsonContent.substring(inicioContexto, finContexto).replaceAll("\\s+", " ");
+                int finContexto = Math.min(cleanedJsonContent.length(), index + palabra.length() + 15);
+                String contextoEjemplo = cleanedJsonContent.substring(inicioContexto, finContexto).replaceAll("\\s+", " ");
                 System.out.println("  Ejemplo " + (ejemplos + 1) + ": ..." + contextoEjemplo + "...");
                 index = contenidoLower.indexOf(palabraLower, index + 1);
                 ejemplos++;
@@ -315,12 +316,13 @@ public class JsonValidationSteps {
             }
         }
         
-        String cleanedJson = cleanedBuilder.toString();
+        // GUARDAR EL CONTENIDO LIMPIO EN LA VARIABLE DE INSTANCIA
+        cleanedJsonContent = cleanedBuilder.toString();
         
         // Guardar el JSON limpio para inspección
         try {
             java.io.FileWriter writer = new java.io.FileWriter("cleaned-json-content.txt");
-            writer.write(cleanedJson);
+            writer.write(cleanedJsonContent);
             writer.close();
             System.out.println("JSON limpio guardado en 'cleaned-json-content.txt'");
         } catch (Exception e) {
@@ -335,7 +337,7 @@ public class JsonValidationSteps {
             mapper.configure(com.fasterxml.jackson.core.JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);
             
             // Convertir el Jackson JsonNode a org.json JSONObject
-            com.fasterxml.jackson.databind.JsonNode jacksonNode = mapper.readTree(cleanedJson);
+            com.fasterxml.jackson.databind.JsonNode jacksonNode = mapper.readTree(cleanedJsonContent);
             String standardJson = jacksonNode.toString();
             jsonContent = new JSONObject(standardJson);
             
@@ -345,7 +347,7 @@ public class JsonValidationSteps {
             
             // Intentar parsear directamente con org.json como fallback
             try {
-                jsonContent = new JSONObject(cleanedJson);
+                jsonContent = new JSONObject(cleanedJsonContent);
                 System.out.println("JSON parseado correctamente utilizando org.json directamente");
             } catch (JSONException orgJsonException) {
                 System.err.println("Error al parsear con org.json: " + orgJsonException.getMessage());
@@ -363,6 +365,7 @@ public class JsonValidationSteps {
         System.err.println("Error general al parsear JSON: " + e.getMessage());
         e.printStackTrace();
         jsonContent = new JSONObject(); // Inicializar vacío para evitar NullPointerException
+        cleanedJsonContent = ""; // Inicializar también el contenido limpio
     }
 }
     

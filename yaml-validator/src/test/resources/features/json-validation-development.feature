@@ -22,4 +22,4 @@ Característica: Validación de configuración del Backend.BackOffice.Zendesk
   Escenario: Verificar que el documento no contiene enlaces a rutas equivocadas
     Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager"
     Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json"
-    Entonces el archivo NO debe contener la palabra "prod"
+    Entonces el archivo NO debe contener la palabra "192.168.68"
