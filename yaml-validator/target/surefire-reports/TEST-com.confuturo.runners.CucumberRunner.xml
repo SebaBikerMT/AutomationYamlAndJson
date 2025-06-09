@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.confuturo.runners.CucumberRunner" time="13.706" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.confuturo.runners.CucumberRunner" time="12.751" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\target\test-classes;C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\target\classes;C:\Users\spena\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\spena\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\spena\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\spena\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\spena\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\spena\.m2\repository\io\github\cdimascio\dotenv-java\2.3.2\dotenv-java-2.3.2.jar;C:\Users\spena\.m2\repository\org\json\json\20230618\json-20230618.jar;C:\Users\spena\.m2\repository\org\gitlab4j\gitlab4j-api\5.4.0\gitlab4j-api-5.4.0.jar;C:\Users\spena\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\2.39.1\jersey-hk2-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-common\2.39.1\jersey-common-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-locator\2.6.1\hk2-locator-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.6.1\aopalliance-repackaged-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-api\2.6.1\hk2-api-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-utils\2.6.1\hk2-utils-2.6.1.jar;C:\Users\spena\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-client\2.39.1\jersey-client-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\2.1.6\jakarta.ws.rs-api-2.1.6.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\jakarta.inject\2.6.1\jakarta.inject-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\connectors\jersey-apache-connector\2.39.1\jersey-apache-connector-2.39.1.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\spena\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\spena\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-multipart\2.39.1\jersey-media-multipart-2.39.1.jar;C:\Users\spena\.m2\repository\org\jvnet\mimepull\mimepull\1.9.15\mimepull-1.9.15.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-json-jackson\2.39.1\jersey-media-json-jackson-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\ext\jersey-entity-filtering\2.39.1\jersey-entity-filtering-2.39.1.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.14.1\jackson-module-jaxb-annotations-2.14.1.jar;C:\Users\spena\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\spena\.m2\repository\jakarta\servlet\jakarta.servlet-api\4.0.4\jakarta.servlet-api-4.0.4.jar;C:\Users\spena\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\spena\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\spena\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\spena\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\spena\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\spena\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
+    <property name="java.class.path" value="C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\target\test-classes;C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\target\classes;C:\Users\spena\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\spena\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\spena\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\spena\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\spena\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\spena\.m2\repository\io\github\cdimascio\dotenv-java\2.3.2\dotenv-java-2.3.2.jar;C:\Users\spena\.m2\repository\org\json\json\20230618\json-20230618.jar;C:\Users\spena\.m2\repository\org\gitlab4j\gitlab4j-api\5.4.0\gitlab4j-api-5.4.0.jar;C:\Users\spena\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\2.39.1\jersey-hk2-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-common\2.39.1\jersey-common-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-locator\2.6.1\hk2-locator-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.6.1\aopalliance-repackaged-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-api\2.6.1\hk2-api-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-utils\2.6.1\hk2-utils-2.6.1.jar;C:\Users\spena\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-client\2.39.1\jersey-client-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\2.1.6\jakarta.ws.rs-api-2.1.6.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\jakarta.inject\2.6.1\jakarta.inject-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\connectors\jersey-apache-connector\2.39.1\jersey-apache-connector-2.39.1.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\spena\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\spena\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-multipart\2.39.1\jersey-media-multipart-2.39.1.jar;C:\Users\spena\.m2\repository\org\jvnet\mimepull\mimepull\1.9.15\mimepull-1.9.15.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-json-jackson\2.39.1\jersey-media-json-jackson-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\ext\jersey-entity-filtering\2.39.1\jersey-entity-filtering-2.39.1.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.14.1\jackson-module-jaxb-annotations-2.14.1.jar;C:\Users\spena\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\spena\.m2\repository\jakarta\servlet\jakarta.servlet-api\4.0.4\jakarta.servlet-api-4.0.4.jar;C:\Users\spena\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\spena\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\spena\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\spena\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\spena\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\spena\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CL"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\spena\AppData\Local\Temp\surefire13785463399244152163\surefirebooter-20250604120654923_3.jar C:\Users\spena\AppData\Local\Temp\surefire13785463399244152163 2025-06-04T12-06-54_613-jvmRun1 surefire-20250604120654923_1tmp surefire_0-20250604120654923_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\spena\AppData\Local\Temp\surefire3179920131104421904\surefirebooter-20250609131752976_3.jar C:\Users\spena\AppData\Local\Temp\surefire3179920131104421904 2025-06-09T13-17-52_663-jvmRun1 surefire-20250609131752976_1tmp surefire_0-20250609131752976_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\target\test-classes;C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\target\classes;C:\Users\spena\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\spena\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\spena\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\spena\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\spena\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\spena\.m2\repository\io\github\cdimascio\dotenv-java\2.3.2\dotenv-java-2.3.2.jar;C:\Users\spena\.m2\repository\org\json\json\20230618\json-20230618.jar;C:\Users\spena\.m2\repository\org\gitlab4j\gitlab4j-api\5.4.0\gitlab4j-api-5.4.0.jar;C:\Users\spena\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\2.39.1\jersey-hk2-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-common\2.39.1\jersey-common-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-locator\2.6.1\hk2-locator-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.6.1\aopalliance-repackaged-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-api\2.6.1\hk2-api-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-utils\2.6.1\hk2-utils-2.6.1.jar;C:\Users\spena\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-client\2.39.1\jersey-client-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\2.1.6\jakarta.ws.rs-api-2.1.6.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\jakarta.inject\2.6.1\jakarta.inject-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\connectors\jersey-apache-connector\2.39.1\jersey-apache-connector-2.39.1.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\spena\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\spena\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-multipart\2.39.1\jersey-media-multipart-2.39.1.jar;C:\Users\spena\.m2\repository\org\jvnet\mimepull\mimepull\1.9.15\mimepull-1.9.15.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-json-jackson\2.39.1\jersey-media-json-jackson-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\ext\jersey-entity-filtering\2.39.1\jersey-entity-filtering-2.39.1.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.14.1\jackson-module-jaxb-annotations-2.14.1.jar;C:\Users\spena\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\spena\.m2\repository\jakarta\servlet\jakarta.servlet-api\4.0.4\jakarta.servlet-api-4.0.4.jar;C:\Users\spena\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\spena\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\spena\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\spena\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\spena\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\spena\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\target\test-classes;C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\target\classes;C:\Users\spena\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\spena\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\spena\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\spena\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\spena\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\spena\.m2\repository\io\github\cdimascio\dotenv-java\2.3.2\dotenv-java-2.3.2.jar;C:\Users\spena\.m2\repository\org\json\json\20230618\json-20230618.jar;C:\Users\spena\.m2\repository\org\gitlab4j\gitlab4j-api\5.4.0\gitlab4j-api-5.4.0.jar;C:\Users\spena\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\2.39.1\jersey-hk2-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-common\2.39.1\jersey-common-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-locator\2.6.1\hk2-locator-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.6.1\aopalliance-repackaged-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-api\2.6.1\hk2-api-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-utils\2.6.1\hk2-utils-2.6.1.jar;C:\Users\spena\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-client\2.39.1\jersey-client-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\2.1.6\jakarta.ws.rs-api-2.1.6.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\jakarta.inject\2.6.1\jakarta.inject-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\connectors\jersey-apache-connector\2.39.1\jersey-apache-connector-2.39.1.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\spena\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\spena\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-multipart\2.39.1\jersey-media-multipart-2.39.1.jar;C:\Users\spena\.m2\repository\org\jvnet\mimepull\mimepull\1.9.15\mimepull-1.9.15.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-json-jackson\2.39.1\jersey-media-json-jackson-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\ext\jersey-entity-filtering\2.39.1\jersey-entity-filtering-2.39.1.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.14.1\jackson-module-jaxb-annotations-2.14.1.jar;C:\Users\spena\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\spena\.m2\repository\jakarta\servlet\jakarta.servlet-api\4.0.4\jakarta.servlet-api-4.0.4.jar;C:\Users\spena\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\spena\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\spena\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\spena\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\spena\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\spena\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\spena"/>
     <property name="user.language" value="es"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2024-07-16"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator"/>
+    <property name="basedir" value="C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\spena\AppData\Local\Temp\surefire13785463399244152163\surefirebooter-20250604120654923_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\spena\AppData\Local\Temp\surefire3179920131104421904\surefirebooter-20250609131752976_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.4+8-LTS-274"/>
@@ -39,13 +39,14 @@
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="skipTest" value="true"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="localRepository" value="C:\Users\spena\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\spena\AppData\Local\Temp\"/>
     <property name="java.version" value="21.0.4"/>
-    <property name="user.dir" value="C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator"/>
+    <property name="user.dir" value="C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -58,14 +59,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Depuración del contenido JSON" classname="Validación de configuración del Backend.BackOffice.Zendesk #1" time="2.503">
+  <testcase name="Depuración del contenido JSON" classname="Validación de configuración del Backend.BackOffice.Zendesk #1" time="2.189">
     <system-out><![CDATA[
 Escenario: Depuración del contenido JSON                                                                                     # src/test/resources/features/json-validation-development.feature:8
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\.env
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
-Archivo .env encontrado en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
 Token encontrado en archivo .env: ../.env
 Conexión a GitLab establecida correctamente
 Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
@@ -255,14 +256,14 @@ JSON parseado correctamente utilizando Jackson
   Entonces imprimo el contenido del JSON para depuración                                                                     # com.confuturo.steps.JsonValidationSteps.imprimoElContenidoDelJsonParaDepuracion()
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar la Url del Cliente" classname="Validación de configuración del Backend.BackOffice.Zendesk #1" time="1.355">
+  <testcase name="Verificar la Url del Cliente" classname="Validación de configuración del Backend.BackOffice.Zendesk #1" time="1.096">
     <system-out><![CDATA[
 Escenario: Verificar la Url del Cliente                                                                                      # src/test/resources/features/json-validation-development.feature:13
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\.env
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
-Archivo .env encontrado en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
 Token encontrado en archivo .env: ../.env
 Conexión a GitLab establecida correctamente
 Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
@@ -368,14 +369,14 @@ Valor actual: 'http://api-clientes.qa.seguros.local/clientes/'
   Entonces el JSON debe contener el campo "Apis.Client.Url" con valor "http://api-clientes.qa.seguros.local/clientes/"       # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar el modo de prueba" classname="Validación de configuración del Backend.BackOffice.Zendesk #1" time="1.214">
+  <testcase name="Verificar el modo de prueba" classname="Validación de configuración del Backend.BackOffice.Zendesk #1" time="1.018">
     <system-out><![CDATA[
 Escenario: Verificar el modo de prueba                                                                                       # src/test/resources/features/json-validation-development.feature:18
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\.env
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
-Archivo .env encontrado en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
 Token encontrado en archivo .env: ../.env
 Conexión a GitLab establecida correctamente
 Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
@@ -481,19 +482,19 @@ Valor actual: true
   Entonces el JSON debe contener el campo "TestMode" con valor booleano "true"                                               # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorBooleano(java.lang.String,java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="Depuración del contenido JSON" classname="Validación de configuración del Backend.BackOffice.Zendesk #2" time="1.054">
+  <testcase name="Depuración del contenido JSON" classname="Validación de configuración del Backend.BackOffice.Zendesk #2" time="1.144">
     <system-out><![CDATA[
 Escenario: Depuración del contenido JSON                                                                                     # src/test/resources/features/json-validation-qa.feature:8
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\.env
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
-Archivo .env encontrado en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
 Token encontrado en archivo .env: ../.env
 Conexión a GitLab establecida correctamente
 Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
   Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager" # com.confuturo.steps.JsonValidationSteps.queAccesoAlRepositorioJson(java.lang.String)
-Intentando leer archivo JSON: src/Backend.BackOffice.Zendesk/appsettings.Development.json del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
+Intentando leer archivo JSON: src/Backend.BackOffice.Zendesk/appsettings.QA.json del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Proyecto encontrado con ID: 61972501
 Intentando obtener archivo de la rama: develop
 Archivo encontrado en la rama: develop
@@ -504,10 +505,8 @@ Contenido JSON guardado en 'gitlab-json-content.txt'
     "Version": "0.01.202411201030"
   },
   "ConnectionStrings": {
-    "PensionesDB": "User Id=PENSIONES;Password=PENSIONES;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.154.171)(PORT=1523)))(CONNECT_DATA=(SERVICE_NAME=PREVQA3)));Pooling=true;",
-    "PensionesUserDB": "User Id=[usrPensiones];Password=abcabc12;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.154.171)(PORT=1523)))(CONNECT_DATA=(SERVICE_NAME=PREVQA3)));Pooling=true;",
-    "TransactionsDB": "Server=192.168.154.92;User ID=usr_transaction_manager;Password=KThJV1YrfGLE0Th;Port=5432;Database=transaction_manager;Integrated Security=true;Pooling=true;Include Error Detail=true;"
-    //"TransactionsDB": "Server=localhost;User ID=postgres;Password=foo;Port=5432;Database=zendesk_transaction;Integrated Security=true;Pooling=true;Include Error Detail=true;"
+    "PensionesDB": "connection-string",
+    "TransactionsDB": "connection-string"
   },
   "Logging": {
     "LogLevel": {
@@ -518,60 +517,24 @@ Contenido JSON guardado en 'gitlab-json-content.txt'
   "TestMode": true, //modo test para el envio de los correos y la generacion de ticket en zendesk
   "Emails": "hcofre@confuturo.cl,mrojas@confuturo.cl,jovalle@confuturo.cl,jhernandezv@confuturo.cl",
   "Apis": {
-    "Client": {
-      "Url": "http://api-clientes.qa.seguros.local/clientes/"
-    },  
-    "Product": {
-      "Url": "http://api-productos.qa.seguros.local/"
-    },
-    "Payment": {
-      "Url": "http://api.qa.seguros.local/payment-service/"
-    },
-    "Pdf": {
-      "Url": "https://pdf-service-42nqpimoca-uc.a.run.app/"
-    },
-    "Notifications": {
-      "Url": "http://api-notificaciones.qa.seguros.local/notificaciones/"
-    },
+    "UrlClients": "http://api-clientes.qa.seguros.local/clientes/",
+    "UrlProductos": "http://api-productos.qa.seguros.local/",
+    "UrlPayment": "http://api.qa.seguros.local/payment-service/",
     "Zendesk": {
-      "Url": "https://atencionconfuturo1616160263.zendesk.com/", //"https://atencionconfuturo.zendesk.com/",
-      //"Token": "2a0bf8a49cf0b0b3fa9a5238ba236baea5d21cbba737a64c3557f80960544489",  //token para prod
-      "User": "jvergarat@confuturo.cl",
-      "Pass": "Confuturo2021",
-      //"SendTicketFromEmail": true,
-      //"Email": "support@atencionconfuturo.zendesk.com",
-      //"Ticket": {
-      //  "Channel": "Portal_clientes"
-      //}
-      "FormId": "20303878720020",
-      "Process": "33125056531988", // Tramite
-      "RemittanceNumber": "20303714924948", // Numero remesable
-      "Policy": "20303361492884", // Poliza"
-      "ProductFamily": "20303373617044", // Familia del producto
-      "AttentionType": "20303563434644", // Tipo de atencion"
-      "Attention": "20303615732628", // Atencion
-      "AttentionChannel": "20303791201044", // canal de atencion
-      "ProcessState": "33125265115284", // Estado Trámite
-      "BranchOffice": "20303809226388", // sucursal
-      "BranchOfficeName": "360044337571"
-    },
-    "Kta": {
-      "Url": "http://192.168.68.19/vwnetx_Confuturo_Zendesk/",
-      "User": "admin",
-      "Pass": "admin"
-    },
-    "HumanResources": {
-      "Url": "http://api.qa.seguros.local/rrhh/"
+      "Url": "zendesk-data",
+      "TestMode": true,
+      "SendTicketFromEmail": true,
+      "Email": "zendesk-data",
+      "Ticket": {
+        "Channel": "zendesk-data"
+      }
     }
   },
   "Keycloak": {
-    "Url": "https://auth-qa.confuturo.cl/auth",
+    "Url": "http://auth-qa.confuturo.cl/auth",
     "Realm": "confuturo-sso-qa",
-    "User": "backend-transaction-manager", // backend-portal-privado
-    "SecretKey": "" // 72aa71c7-55cf-4a18-b47a-a648cba6da6c
-  },
-  "UrlVisualTime": "http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx",
-  "currentPeriodTest": "202410"
+    "User": "backend-transaction-manager"
+  }
 }
 === FIN DEL CONTENIDO ORIGINAL ===
 JSON limpio guardado en 'cleaned-json-content.txt'
@@ -581,23 +544,19 @@ JSON parseado correctamente utilizando Jackson
 - AppSettings
 - Apis
 - TestMode
-- UrlVisualTime
-- currentPeriodTest
 - Emails
 - Keycloak
 - ConnectionStrings
 ======================================
-  Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json"                                   # com.confuturo.steps.JsonValidationSteps.leoElArchivoJson(java.lang.String)
+  Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json"                                            # com.confuturo.steps.JsonValidationSteps.leoElArchivoJson(java.lang.String)
 === CONTENIDO JSON RECUPERADO ===
 {
   "AppSettings": {
     "Version": "0.01.202411201030"
   },
   "ConnectionStrings": {
-    "PensionesDB": "User Id=PENSIONES;Password=PENSIONES;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.154.171)(PORT=1523)))(CONNECT_DATA=(SERVICE_NAME=PREVQA3)));Pooling=true;",
-    "PensionesUserDB": "User Id=[usrPensiones];Password=abcabc12;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.154.171)(PORT=1523)))(CONNECT_DATA=(SERVICE_NAME=PREVQA3)));Pooling=true;",
-    "TransactionsDB": "Server=192.168.154.92;User ID=usr_transaction_manager;Password=KThJV1YrfGLE0Th;Port=5432;Database=transaction_manager;Integrated Security=true;Pooling=true;Include Error Detail=true;"
-    //"TransactionsDB": "Server=localhost;User ID=postgres;Password=foo;Port=5432;Database=zendesk_transaction;Integrated Security=true;Pooling=true;Include Error Detail=true;"
+    "PensionesDB": "connection-string",
+    "TransactionsDB": "connection-string"
   },
   "Logging": {
     "LogLevel": {
@@ -608,60 +567,24 @@ JSON parseado correctamente utilizando Jackson
   "TestMode": true, //modo test para el envio de los correos y la generacion de ticket en zendesk
   "Emails": "hcofre@confuturo.cl,mrojas@confuturo.cl,jovalle@confuturo.cl,jhernandezv@confuturo.cl",
   "Apis": {
-    "Client": {
-      "Url": "http://api-clientes.qa.seguros.local/clientes/"
-    },  
-    "Product": {
-      "Url": "http://api-productos.qa.seguros.local/"
-    },
-    "Payment": {
-      "Url": "http://api.qa.seguros.local/payment-service/"
-    },
-    "Pdf": {
-      "Url": "https://pdf-service-42nqpimoca-uc.a.run.app/"
-    },
-    "Notifications": {
-      "Url": "http://api-notificaciones.qa.seguros.local/notificaciones/"
-    },
+    "UrlClients": "http://api-clientes.qa.seguros.local/clientes/",
+    "UrlProductos": "http://api-productos.qa.seguros.local/",
+    "UrlPayment": "http://api.qa.seguros.local/payment-service/",
     "Zendesk": {
-      "Url": "https://atencionconfuturo1616160263.zendesk.com/", //"https://atencionconfuturo.zendesk.com/",
-      //"Token": "2a0bf8a49cf0b0b3fa9a5238ba236baea5d21cbba737a64c3557f80960544489",  //token para prod
-      "User": "jvergarat@confuturo.cl",
-      "Pass": "Confuturo2021",
-      //"SendTicketFromEmail": true,
-      //"Email": "support@atencionconfuturo.zendesk.com",
-      //"Ticket": {
-      //  "Channel": "Portal_clientes"
-      //}
-      "FormId": "20303878720020",
-      "Process": "33125056531988", // Tramite
-      "RemittanceNumber": "20303714924948", // Numero remesable
-      "Policy": "20303361492884", // Poliza"
-      "ProductFamily": "20303373617044", // Familia del producto
-      "AttentionType": "20303563434644", // Tipo de atencion"
-      "Attention": "20303615732628", // Atencion
-      "AttentionChannel": "20303791201044", // canal de atencion
-      "ProcessState": "33125265115284", // Estado Trámite
-      "BranchOffice": "20303809226388", // sucursal
-      "BranchOfficeName": "360044337571"
-    },
-    "Kta": {
-      "Url": "http://192.168.68.19/vwnetx_Confuturo_Zendesk/",
-      "User": "admin",
-      "Pass": "admin"
-    },
-    "HumanResources": {
-      "Url": "http://api.qa.seguros.local/rrhh/"
+      "Url": "zendesk-data",
+      "TestMode": true,
+      "SendTicketFromEmail": true,
+      "Email": "zendesk-data",
+      "Ticket": {
+        "Channel": "zendesk-data"
+      }
     }
   },
   "Keycloak": {
-    "Url": "https://auth-qa.confuturo.cl/auth",
+    "Url": "http://auth-qa.confuturo.cl/auth",
     "Realm": "confuturo-sso-qa",
-    "User": "backend-transaction-manager", // backend-portal-privado
-    "SecretKey": "" // 72aa71c7-55cf-4a18-b47a-a648cba6da6c
-  },
-  "UrlVisualTime": "http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx",
-  "currentPeriodTest": "202410"
+    "User": "backend-transaction-manager"
+  }
 }
 === FIN DEL CONTENIDO JSON ===
 === CLAVES DE PRIMER NIVEL ===
@@ -669,8 +592,6 @@ JSON parseado correctamente utilizando Jackson
 - AppSettings
 - Apis
 - TestMode
-- UrlVisualTime
-- currentPeriodTest
 - Emails
 - Keycloak
 - ConnectionStrings
@@ -678,19 +599,19 @@ JSON parseado correctamente utilizando Jackson
   Entonces imprimo el contenido del JSON para depuración                                                                     # com.confuturo.steps.JsonValidationSteps.imprimoElContenidoDelJsonParaDepuracion()
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar la Url del Cliente" classname="Validación de configuración del Backend.BackOffice.Zendesk #2" time="1.148">
+  <testcase name="Verificar la Url del Cliente" classname="Validación de configuración del Backend.BackOffice.Zendesk #2" time="0.957">
     <system-out><![CDATA[
 Escenario: Verificar la Url del Cliente                                                                                      # src/test/resources/features/json-validation-qa.feature:13
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\.env
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
-Archivo .env encontrado en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
 Token encontrado en archivo .env: ../.env
 Conexión a GitLab establecida correctamente
 Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
   Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager" # com.confuturo.steps.JsonValidationSteps.queAccesoAlRepositorioJson(java.lang.String)
-Intentando leer archivo JSON: src/Backend.BackOffice.Zendesk/appsettings.Development.json del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
+Intentando leer archivo JSON: src/Backend.BackOffice.Zendesk/appsettings.QA.json del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Proyecto encontrado con ID: 61972501
 Intentando obtener archivo de la rama: develop
 Archivo encontrado en la rama: develop
@@ -701,10 +622,8 @@ Contenido JSON guardado en 'gitlab-json-content.txt'
     "Version": "0.01.202411201030"
   },
   "ConnectionStrings": {
-    "PensionesDB": "User Id=PENSIONES;Password=PENSIONES;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.154.171)(PORT=1523)))(CONNECT_DATA=(SERVICE_NAME=PREVQA3)));Pooling=true;",
-    "PensionesUserDB": "User Id=[usrPensiones];Password=abcabc12;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.154.171)(PORT=1523)))(CONNECT_DATA=(SERVICE_NAME=PREVQA3)));Pooling=true;",
-    "TransactionsDB": "Server=192.168.154.92;User ID=usr_transaction_manager;Password=KThJV1YrfGLE0Th;Port=5432;Database=transaction_manager;Integrated Security=true;Pooling=true;Include Error Detail=true;"
-    //"TransactionsDB": "Server=localhost;User ID=postgres;Password=foo;Port=5432;Database=zendesk_transaction;Integrated Security=true;Pooling=true;Include Error Detail=true;"
+    "PensionesDB": "connection-string",
+    "TransactionsDB": "connection-string"
   },
   "Logging": {
     "LogLevel": {
@@ -715,60 +634,24 @@ Contenido JSON guardado en 'gitlab-json-content.txt'
   "TestMode": true, //modo test para el envio de los correos y la generacion de ticket en zendesk
   "Emails": "hcofre@confuturo.cl,mrojas@confuturo.cl,jovalle@confuturo.cl,jhernandezv@confuturo.cl",
   "Apis": {
-    "Client": {
-      "Url": "http://api-clientes.qa.seguros.local/clientes/"
-    },  
-    "Product": {
-      "Url": "http://api-productos.qa.seguros.local/"
-    },
-    "Payment": {
-      "Url": "http://api.qa.seguros.local/payment-service/"
-    },
-    "Pdf": {
-      "Url": "https://pdf-service-42nqpimoca-uc.a.run.app/"
-    },
-    "Notifications": {
-      "Url": "http://api-notificaciones.qa.seguros.local/notificaciones/"
-    },
+    "UrlClients": "http://api-clientes.qa.seguros.local/clientes/",
+    "UrlProductos": "http://api-productos.qa.seguros.local/",
+    "UrlPayment": "http://api.qa.seguros.local/payment-service/",
     "Zendesk": {
-      "Url": "https://atencionconfuturo1616160263.zendesk.com/", //"https://atencionconfuturo.zendesk.com/",
-      //"Token": "2a0bf8a49cf0b0b3fa9a5238ba236baea5d21cbba737a64c3557f80960544489",  //token para prod
-      "User": "jvergarat@confuturo.cl",
-      "Pass": "Confuturo2021",
-      //"SendTicketFromEmail": true,
-      //"Email": "support@atencionconfuturo.zendesk.com",
-      //"Ticket": {
-      //  "Channel": "Portal_clientes"
-      //}
-      "FormId": "20303878720020",
-      "Process": "33125056531988", // Tramite
-      "RemittanceNumber": "20303714924948", // Numero remesable
-      "Policy": "20303361492884", // Poliza"
-      "ProductFamily": "20303373617044", // Familia del producto
-      "AttentionType": "20303563434644", // Tipo de atencion"
-      "Attention": "20303615732628", // Atencion
-      "AttentionChannel": "20303791201044", // canal de atencion
-      "ProcessState": "33125265115284", // Estado Trámite
-      "BranchOffice": "20303809226388", // sucursal
-      "BranchOfficeName": "360044337571"
-    },
-    "Kta": {
-      "Url": "http://192.168.68.19/vwnetx_Confuturo_Zendesk/",
-      "User": "admin",
-      "Pass": "admin"
-    },
-    "HumanResources": {
-      "Url": "http://api.qa.seguros.local/rrhh/"
+      "Url": "zendesk-data",
+      "TestMode": true,
+      "SendTicketFromEmail": true,
+      "Email": "zendesk-data",
+      "Ticket": {
+        "Channel": "zendesk-data"
+      }
     }
   },
   "Keycloak": {
-    "Url": "https://auth-qa.confuturo.cl/auth",
+    "Url": "http://auth-qa.confuturo.cl/auth",
     "Realm": "confuturo-sso-qa",
-    "User": "backend-transaction-manager", // backend-portal-privado
-    "SecretKey": "" // 72aa71c7-55cf-4a18-b47a-a648cba6da6c
-  },
-  "UrlVisualTime": "http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx",
-  "currentPeriodTest": "202410"
+    "User": "backend-transaction-manager"
+  }
 }
 === FIN DEL CONTENIDO ORIGINAL ===
 JSON limpio guardado en 'cleaned-json-content.txt'
@@ -778,32 +661,30 @@ JSON parseado correctamente utilizando Jackson
 - AppSettings
 - Apis
 - TestMode
-- UrlVisualTime
-- currentPeriodTest
 - Emails
 - Keycloak
 - ConnectionStrings
 ======================================
-  Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json"                                   # com.confuturo.steps.JsonValidationSteps.leoElArchivoJson(java.lang.String)
-Campo: Apis.Client.Url
+  Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json"                                            # com.confuturo.steps.JsonValidationSteps.leoElArchivoJson(java.lang.String)
+Campo: Apis.UrlClients
 Valor esperado: 'http://api-clientes.qa.seguros.local/clientes/'
 Valor actual: 'http://api-clientes.qa.seguros.local/clientes/'
-  Entonces el JSON debe contener el campo "Apis.Client.Url" con valor "http://api-clientes.qa.seguros.local/clientes/"       # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+  Entonces el JSON debe contener el campo "Apis.UrlClients" con valor "http://api-clientes.qa.seguros.local/clientes/"       # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar el modo de prueba" classname="Validación de configuración del Backend.BackOffice.Zendesk #2" time="1.339">
+  <testcase name="Verificar el modo de prueba" classname="Validación de configuración del Backend.BackOffice.Zendesk #2" time="1.004">
     <system-out><![CDATA[
 Escenario: Verificar el modo de prueba                                                                                       # src/test/resources/features/json-validation-qa.feature:18
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\.env
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
-Archivo .env encontrado en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
 Token encontrado en archivo .env: ../.env
 Conexión a GitLab establecida correctamente
 Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
   Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager" # com.confuturo.steps.JsonValidationSteps.queAccesoAlRepositorioJson(java.lang.String)
-Intentando leer archivo JSON: src/Backend.BackOffice.Zendesk/appsettings.Development.json del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
+Intentando leer archivo JSON: src/Backend.BackOffice.Zendesk/appsettings.QA.json del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Proyecto encontrado con ID: 61972501
 Intentando obtener archivo de la rama: develop
 Archivo encontrado en la rama: develop
@@ -814,10 +695,8 @@ Contenido JSON guardado en 'gitlab-json-content.txt'
     "Version": "0.01.202411201030"
   },
   "ConnectionStrings": {
-    "PensionesDB": "User Id=PENSIONES;Password=PENSIONES;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.154.171)(PORT=1523)))(CONNECT_DATA=(SERVICE_NAME=PREVQA3)));Pooling=true;",
-    "PensionesUserDB": "User Id=[usrPensiones];Password=abcabc12;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.154.171)(PORT=1523)))(CONNECT_DATA=(SERVICE_NAME=PREVQA3)));Pooling=true;",
-    "TransactionsDB": "Server=192.168.154.92;User ID=usr_transaction_manager;Password=KThJV1YrfGLE0Th;Port=5432;Database=transaction_manager;Integrated Security=true;Pooling=true;Include Error Detail=true;"
-    //"TransactionsDB": "Server=localhost;User ID=postgres;Password=foo;Port=5432;Database=zendesk_transaction;Integrated Security=true;Pooling=true;Include Error Detail=true;"
+    "PensionesDB": "connection-string",
+    "TransactionsDB": "connection-string"
   },
   "Logging": {
     "LogLevel": {
@@ -828,60 +707,24 @@ Contenido JSON guardado en 'gitlab-json-content.txt'
   "TestMode": true, //modo test para el envio de los correos y la generacion de ticket en zendesk
   "Emails": "hcofre@confuturo.cl,mrojas@confuturo.cl,jovalle@confuturo.cl,jhernandezv@confuturo.cl",
   "Apis": {
-    "Client": {
-      "Url": "http://api-clientes.qa.seguros.local/clientes/"
-    },  
-    "Product": {
-      "Url": "http://api-productos.qa.seguros.local/"
-    },
-    "Payment": {
-      "Url": "http://api.qa.seguros.local/payment-service/"
-    },
-    "Pdf": {
-      "Url": "https://pdf-service-42nqpimoca-uc.a.run.app/"
-    },
-    "Notifications": {
-      "Url": "http://api-notificaciones.qa.seguros.local/notificaciones/"
-    },
+    "UrlClients": "http://api-clientes.qa.seguros.local/clientes/",
+    "UrlProductos": "http://api-productos.qa.seguros.local/",
+    "UrlPayment": "http://api.qa.seguros.local/payment-service/",
     "Zendesk": {
-      "Url": "https://atencionconfuturo1616160263.zendesk.com/", //"https://atencionconfuturo.zendesk.com/",
-      //"Token": "2a0bf8a49cf0b0b3fa9a5238ba236baea5d21cbba737a64c3557f80960544489",  //token para prod
-      "User": "jvergarat@confuturo.cl",
-      "Pass": "Confuturo2021",
-      //"SendTicketFromEmail": true,
-      //"Email": "support@atencionconfuturo.zendesk.com",
-      //"Ticket": {
-      //  "Channel": "Portal_clientes"
-      //}
-      "FormId": "20303878720020",
-      "Process": "33125056531988", // Tramite
-      "RemittanceNumber": "20303714924948", // Numero remesable
-      "Policy": "20303361492884", // Poliza"
-      "ProductFamily": "20303373617044", // Familia del producto
-      "AttentionType": "20303563434644", // Tipo de atencion"
-      "Attention": "20303615732628", // Atencion
-      "AttentionChannel": "20303791201044", // canal de atencion
-      "ProcessState": "33125265115284", // Estado Trámite
-      "BranchOffice": "20303809226388", // sucursal
-      "BranchOfficeName": "360044337571"
-    },
-    "Kta": {
-      "Url": "http://192.168.68.19/vwnetx_Confuturo_Zendesk/",
-      "User": "admin",
-      "Pass": "admin"
-    },
-    "HumanResources": {
-      "Url": "http://api.qa.seguros.local/rrhh/"
+      "Url": "zendesk-data",
+      "TestMode": true,
+      "SendTicketFromEmail": true,
+      "Email": "zendesk-data",
+      "Ticket": {
+        "Channel": "zendesk-data"
+      }
     }
   },
   "Keycloak": {
-    "Url": "https://auth-qa.confuturo.cl/auth",
+    "Url": "http://auth-qa.confuturo.cl/auth",
     "Realm": "confuturo-sso-qa",
-    "User": "backend-transaction-manager", // backend-portal-privado
-    "SecretKey": "" // 72aa71c7-55cf-4a18-b47a-a648cba6da6c
-  },
-  "UrlVisualTime": "http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx",
-  "currentPeriodTest": "202410"
+    "User": "backend-transaction-manager"
+  }
 }
 === FIN DEL CONTENIDO ORIGINAL ===
 JSON limpio guardado en 'cleaned-json-content.txt'
@@ -891,27 +734,36 @@ JSON parseado correctamente utilizando Jackson
 - AppSettings
 - Apis
 - TestMode
-- UrlVisualTime
-- currentPeriodTest
 - Emails
 - Keycloak
 - ConnectionStrings
 ======================================
-  Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json"                                   # com.confuturo.steps.JsonValidationSteps.leoElArchivoJson(java.lang.String)
+  Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json"                                            # com.confuturo.steps.JsonValidationSteps.leoElArchivoJson(java.lang.String)
 Campo: TestMode
 Valor esperado: true
 Valor actual: true
   Entonces el JSON debe contener el campo "TestMode" con valor booleano "true"                                               # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorBooleano(java.lang.String,java.lang.String)
+
+===== VERIFICANDO QUE NO EXISTA LA PALABRA EXACTA =====
+Palabra EXACTA que NO debe existir: 'prod'
+Nota: Solo busca la palabra completa, no como parte de otras palabras
+Patrón de búsqueda (palabra exacta): \b\Qprod\E\b
+¿Palabra EXACTA encontrada? false
+✓ Correcto: La palabra EXACTA 'prod' NO fue encontrada
+ℹ Nota informativa: La secuencia 'prod' SÍ aparece como parte de otras palabras, pero NO como palabra independiente
+  Ejemplo 1: ...tes/", "UrlProductos": "http:/...
+  Ejemplo 2: ...": "http://api-productos.qa.seguro...
+  Y el archivo NO debe contener la palabra "prod"                                                                            # com.confuturo.steps.JsonValidationSteps.elArchivoNoDebeContenerLaPalabra(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion" classname="Validación de archivo YAML de valores para Kubernetes #1" time="1.055">
+  <testcase name="El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion" classname="Validación de archivo YAML de valores para Kubernetes #1" time="1.391">
     <system-out><![CDATA[
 Escenario: El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion                                                         # src/test/resources/features/yaml-validation_prod.feature:8
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\.env
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
-Archivo .env encontrado en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
 Token encontrado en archivo .env: ../.env
 Conexión a GitLab establecida correctamente
 Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
@@ -975,14 +827,14 @@ Valor actual: 'prod'
   Y el archivo debe contener el campo "vault.hashicorp.com/role" con valor "prod"                                                                          # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de archivo YAML de valores para Kubernetes #1" time="1.109">
+  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de archivo YAML de valores para Kubernetes #1" time="1.271">
     <system-out><![CDATA[
 Escenario: El archivo YAML debe tener la configuración de servicios correcta                                            # src/test/resources/features/yaml-validation_prod.feature:24
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\.env
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
-Archivo .env encontrado en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
 Token encontrado en archivo .env: ../.env
 Conexión a GitLab establecida correctamente
 Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
@@ -1002,14 +854,14 @@ Valor actual: false
   Y el archivo debe contener el campo "TestMode" con valor false                                                        # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorFalse(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML de QA debe tener solo valores que hagan referencia a QA" classname="Validación de archivo YAML de valores para Kubernetes #2" time="1.395">
+  <testcase name="El archivo YAML de QA debe tener solo valores que hagan referencia a QA" classname="Validación de archivo YAML de valores para Kubernetes #2" time="1.019">
     <system-out><![CDATA[
 Escenario: El archivo YAML de QA debe tener solo valores que hagan referencia a QA                                                                         # src/test/resources/features/yaml-validation_qa.feature:8
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\.env
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
-Archivo .env encontrado en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
 Token encontrado en archivo .env: ../.env
 Conexión a GitLab establecida correctamente
 Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
@@ -1073,14 +925,14 @@ Valor actual: 'qa'
   Y el archivo debe contener el campo "vault.hashicorp.com/role" con valor "qa"                                                                            # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de archivo YAML de valores para Kubernetes #2" time="1.047">
+  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de archivo YAML de valores para Kubernetes #2" time="1.011">
     <system-out><![CDATA[
 Escenario: El archivo YAML debe tener la configuración de servicios correcta                                                                     # src/test/resources/features/yaml-validation_qa.feature:24
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\.env
-Comprobando archivo .env en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
-Archivo .env encontrado en: C:\Users\spena\Desktop\Automatizacion gitlab - confuturo\yaml-validator\..\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
 Token encontrado en archivo .env: ../.env
 Conexión a GitLab establecida correctamente
 Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager

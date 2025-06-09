@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="12.172" tests="10" skipped="0" failures="0" errors="0">
+<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Depuración del contenido JSON" time="2.093">
+<system-out><![CDATA[
+Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
+Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json".passed
+Entonces imprimo el contenido del JSON para depuración......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Verificar la Url del Cliente" time="1.083">
+<system-out><![CDATA[
+Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
+Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json".passed
+Entonces el JSON debe contener el campo "Apis.Client.Url" con valor "http://api-clientes.qa.seguros.local/clientes/".passed
+]]></system-out>
+</testcase>
+<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Verificar el modo de prueba" time="1">
+<system-out><![CDATA[
+Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
+Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json".passed
+Entonces el JSON debe contener el campo "TestMode" con valor booleano "true".passed
+]]></system-out>
+</testcase>
+<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Depuración del contenido JSON" time="1.132">
+<system-out><![CDATA[
+Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
+Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json".passed
+Entonces imprimo el contenido del JSON para depuración......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Verificar la Url del Cliente" time="0.953">
+<system-out><![CDATA[
+Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
+Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json".passed
+Entonces el JSON debe contener el campo "Apis.UrlClients" con valor "http://api-clientes.qa.seguros.local/clientes/".passed
+]]></system-out>
+</testcase>
+<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Verificar el modo de prueba" time="1">
+<system-out><![CDATA[
+Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
+Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json".passed
+Entonces el JSON debe contener el campo "TestMode" con valor booleano "true".passed
+Y el archivo NO debe contener la palabra "prod".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validación de archivo YAML de valores para Kubernetes" name="El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion" time="1.384">
+<system-out><![CDATA[
+Dado que tengo acceso al repositorio "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
+Cuando leo el archivo "helm/prod-values-gke.yaml"...........................passed
+Entonces el archivo debe contener el campo "ASPNETCORE_ENVIRONMENT" con valor "Production".passed
+Y el archivo debe contener el campo "Apis__Client__Url" con valor "http://cliente-servicio-api.prod-servicios-globales.svc.cluster.local/clientes/".passed
+Y el archivo debe contener el campo "Apis__Product__Url" con valor "http://productos-services.prod-servicios-globales.svc.cluster.local/productos/".passed
+Y el archivo debe contener el campo "Apis__Payment__Url" con valor "http://payment-service-api.prod-payment-services.svc.cluster.local/payment-service/".passed
+Y el archivo debe contener el campo "Apis__Zendesk__Url" con valor "https://atencionconfuturo.zendesk.com/".passed
+Y el archivo debe contener el campo "Apis__Pdf__Url " con valor "http://pdf-service.prod-pdf-service.svc.cluster.local/pdf-service/".passed
+Y el archivo debe contener el campo "Apis__Kta__Url " con valor "http://192.168.83.90/vwnetx_Confuturo_Zendesk/".passed
+Y el valor de Apis__Kta__User debe ser "admin"..............................passed
+Y el archivo debe contener el campo "Apis__Notifications__Url" con valor "http://api-notificaciones.prod-notificaciones.svc.cluster.local/notificacion/".passed
+Y el archivo debe contener el campo "Apis__HumanResources__Url" con valor "http://rrhh-service.prod-rrhh-service.svc.cluster.local/rrhh/".passed
+Y el archivo debe contener el campo "UrlVisualTime " con valor "http://prodapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx".passed
+Y el archivo debe contener el campo "vault.hashicorp.com/role" con valor "prod".passed
+]]></system-out>
+</testcase>
+<testcase classname="Validación de archivo YAML de valores para Kubernetes" name="El archivo YAML debe tener la configuración de servicios correcta" time="1.275">
+<system-out><![CDATA[
+Dado que tengo acceso al repositorio "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
+Cuando leo el archivo "helm/prod-values-gke.yaml"...........................passed
+Entonces el archivo debe contener el campo "serviceAccount.create" con valor true.passed
+Y el archivo debe contener el campo "TestMode" con valor false..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Validación de archivo YAML de valores para Kubernetes" name="El archivo YAML de QA debe tener solo valores que hagan referencia a QA" time="1.009">
+<system-out><![CDATA[
+Dado que tengo acceso al repositorio "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
+Cuando leo el archivo "helm/qa-values-gke.yaml".............................passed
+Entonces el archivo debe contener el campo "ASPNETCORE_ENVIRONMENT" con valor "QA".passed
+Y el archivo debe contener el campo "Apis__Client__Url" con valor "http://cliente-servicio-api.qa-clientes.svc.cluster.local/clientes/".passed
+Y el archivo debe contener el campo "Apis__Product__Url" con valor "http://productos-services.qa-servicios-globales.svc.cluster.local/productos/".passed
+Y el archivo debe contener el campo "Apis__Payment__Url" con valor "http://payment-service-api.qa-payment-services.svc.cluster.local/payment-service/".passed
+Y el archivo debe contener el campo "Apis__Zendesk__Url" con valor "https://atencionconfuturo1616160263.zendesk.com/".passed
+Y el archivo debe contener el campo "Apis__Pdf__Url" con valor "http://pdf-service.qa-pdf-service.svc.cluster.local/pdf-service/".passed
+Y el archivo debe contener el campo "Apis__Kta__Url" con valor "http://192.168.68.19/vwnetx_confuturo_zendesk/".passed
+Y el valor de Apis__Kta__User debe ser "admin"..............................passed
+Y el archivo debe contener el campo "Apis__Notifications__Url" con valor "http://api-notificaciones.qa-notificaciones.svc.cluster.local/notificaciones/".passed
+Y el archivo debe contener el campo "Apis__HumanResources__Url" con valor "http://rrhh-service.qa-rrhh-service.svc.cluster.local/rrhh/".passed
+Y el archivo debe contener el campo "UrlVisualTime" con valor "http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx".passed
+Y el archivo debe contener el campo "vault.hashicorp.com/role" con valor "qa".passed
+]]></system-out>
+</testcase>
+<testcase classname="Validación de archivo YAML de valores para Kubernetes" name="El archivo YAML debe tener la configuración de servicios correcta" time="1.017">
+<system-out><![CDATA[
+Dado que tengo acceso al repositorio "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
+Cuando leo el archivo "helm/qa-values-gke.yaml".............................passed
+Entonces el archivo debe contener el campo "serviceAccount.create" con valor true.passed
+Y el archivo debe contener el campo "TestMode" con valor "true  # modo test para el envio de los correos y la generacion de ticket en zendesk".passed
+]]></system-out>
+</testcase>
+</testsuite>

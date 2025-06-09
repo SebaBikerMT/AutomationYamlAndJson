@@ -145,9 +145,9 @@
                         <configuration>
                             <projectName>Automatización archivos Yaml y Json - Confuturo</projectName>
                             <outputDirectory>${project.build.directory}/advanced-cucumber-reports</outputDirectory>
-                            <inputDirectory>${project.build.directory}/cucumber-json</inputDirectory>
+                            <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
                             <jsonFiles>
-                                <param>**/cucumber-report.json</param>
+                                <param>**/cucumber.json</param>
                             </jsonFiles>
                             <buildNumber>${project.version}</buildNumber>
                             <checkBuildResult>false</checkBuildResult>

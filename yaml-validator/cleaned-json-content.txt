@@ -3,9 +3,8 @@
     "Version": "0.01.202411201030"
   },
   "ConnectionStrings": {
-    "PensionesDB": "User Id=PENSIONES;Password=PENSIONES;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.154.171)(PORT=1523)))(CONNECT_DATA=(SERVICE_NAME=PREVQA3)));Pooling=true;",
-    "PensionesUserDB": "User Id=[usrPensiones];Password=abcabc12;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.154.171)(PORT=1523)))(CONNECT_DATA=(SERVICE_NAME=PREVQA3)));Pooling=true;",
-    "TransactionsDB": "Server=192.168.154.92;User ID=usr_transaction_manager;Password=KThJV1YrfGLE0Th;Port=5432;Database=transaction_manager;Integrated Security=true;Pooling=true;Include Error Detail=true;"
+    "PensionesDB": "connection-string",
+    "TransactionsDB": "connection-string"
   },
   "Logging": {
     "LogLevel": {
@@ -16,52 +15,22 @@
   "TestMode": true, 
   "Emails": "hcofre@confuturo.cl,mrojas@confuturo.cl,jovalle@confuturo.cl,jhernandezv@confuturo.cl",
   "Apis": {
-    "Client": {
-      "Url": "http://api-clientes.qa.seguros.local/clientes/"
-    },  
-    "Product": {
-      "Url": "http://api-productos.qa.seguros.local/"
-    },
-    "Payment": {
-      "Url": "http://api.qa.seguros.local/payment-service/"
-    },
-    "Pdf": {
-      "Url": "https://pdf-service-42nqpimoca-uc.a.run.app/"
-    },
-    "Notifications": {
-      "Url": "http://api-notificaciones.qa.seguros.local/notificaciones/"
-    },
+    "UrlClients": "http://api-clientes.qa.seguros.local/clientes/",
+    "UrlProductos": "http://api-productos.qa.seguros.local/",
+    "UrlPayment": "http://api.qa.seguros.local/payment-service/",
     "Zendesk": {
-      "Url": "https://atencionconfuturo1616160263.zendesk.com/", 
-      "User": "jvergarat@confuturo.cl",
-      "Pass": "Confuturo2021",
-      "FormId": "20303878720020",
-      "Process": "33125056531988", 
-      "RemittanceNumber": "20303714924948", 
-      "Policy": "20303361492884", 
-      "ProductFamily": "20303373617044", 
-      "AttentionType": "20303563434644", 
-      "Attention": "20303615732628", 
-      "AttentionChannel": "20303791201044", 
-      "ProcessState": "33125265115284", 
-      "BranchOffice": "20303809226388", 
-      "BranchOfficeName": "360044337571"
-    },
-    "Kta": {
-      "Url": "http://192.168.68.19/vwnetx_Confuturo_Zendesk/",
-      "User": "admin",
-      "Pass": "admin"
-    },
-    "HumanResources": {
-      "Url": "http://api.qa.seguros.local/rrhh/"
+      "Url": "zendesk-data",
+      "TestMode": true,
+      "SendTicketFromEmail": true,
+      "Email": "zendesk-data",
+      "Ticket": {
+        "Channel": "zendesk-data"
+      }
     }
   },
   "Keycloak": {
-    "Url": "https://auth-qa.confuturo.cl/auth",
+    "Url": "http://auth-qa.confuturo.cl/auth",
     "Realm": "confuturo-sso-qa",
-    "User": "backend-transaction-manager", 
-    "SecretKey": "" 
-  },
-  "UrlVisualTime": "http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx",
-  "currentPeriodTest": "202410"
+    "User": "backend-transaction-manager"
+  }
 }

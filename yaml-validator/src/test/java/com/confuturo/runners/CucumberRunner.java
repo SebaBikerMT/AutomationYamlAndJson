@@ -10,12 +10,15 @@ import org.junit.runner.RunWith;
     glue = "com.confuturo.steps",
     plugin = {
         "pretty",
-        "json:target/cucumber-json/cucumber-report.json"
+        "html:target/cucumber-reports/cucumber-html-report.html",
+        "json:target/cucumber-reports/cucumber.json",
+        "junit:target/cucumber-reports/cucumber.xml",
+        "rerun:target/rerun.txt",
+        "json:target/cucumber-json/cucumber-json.report"
     },
+    monochrome = true,
     dryRun = false,
-    monochrome = true
+    tags = ""
 )
 public class CucumberRunner {
-    
-    
 }

@@ -203,9 +203,75 @@ public class JsonValidationSteps {
             throw e;
         }
     }
+
+    @Then("el archivo NO debe contener la palabra {string}")
+    public void elArchivoNoDebeContenerLaPalabra(String palabra) {
+    System.out.println("\n===== VERIFICANDO QUE NO EXISTA LA PALABRA EXACTA =====");
+    System.out.println("Palabra EXACTA que NO debe existir: '" + palabra + "'");
+    System.out.println("Nota: Solo busca la palabra completa, no como parte de otras palabras");
+    
+    if (rawJsonContent == null || rawJsonContent.isEmpty()) {
+        String errorMsg = "El contenido del archivo está vacío o no se ha cargado";
+        System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+        validationErrors.add(errorMsg);
+        return;
+    }
+    
+    // Crear patrón regex para buscar ÚNICAMENTE la palabra completa y exacta
+    // \b = límite de palabra (word boundary)
+    // Pattern.quote() = escapa caracteres especiales para búsqueda literal
+    // Esto significa que "prod" NO coincidirá con "producto", "producir", etc.
+    String patron = "\\b" + java.util.regex.Pattern.quote(palabra) + "\\b";
+    java.util.regex.Pattern pattern = java.util.regex.Pattern.compile(patron, java.util.regex.Pattern.CASE_INSENSITIVE);
+    java.util.regex.Matcher matcher = pattern.matcher(rawJsonContent);
+    
+    boolean encontradaPalabraExacta = matcher.find();
+    System.out.println("Patrón de búsqueda (palabra exacta): " + patron);
+    System.out.println("¿Palabra EXACTA encontrada? " + encontradaPalabraExacta);
+    
+    if (encontradaPalabraExacta) {
+        // Mostrar contexto donde se encontró la palabra exacta
+        List<String> ocurrencias = new ArrayList<>();
+        matcher.reset(); // Reiniciar matcher para encontrar todas las ocurrencias
+        while (matcher.find() && ocurrencias.size() < 5) { // Máximo 5 ejemplos
+            int inicio = Math.max(0, matcher.start() - 30);
+            int fin = Math.min(rawJsonContent.length(), matcher.end() + 30);
+            String contexto = rawJsonContent.substring(inicio, fin).replaceAll("\\s+", " ");
+            ocurrencias.add("..." + contexto + "...");
+        }
+        
+        String errorMsg = "La palabra EXACTA '" + palabra + "' fue encontrada en el archivo pero NO debería estar presente. " +
+                         "Contexto(s): " + String.join(" | ", ocurrencias);
+        System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+        validationErrors.add(errorMsg);
+    } else {
+        System.out.println("✓ Correcto: La palabra EXACTA '" + palabra + "' NO fue encontrada");
+        
+        // Información adicional: verificar si existe como substring para debugging
+        if (rawJsonContent.toLowerCase().contains(palabra.toLowerCase())) {
+            System.out.println("ℹ Nota informativa: La secuencia '" + palabra + "' SÍ aparece como parte de otras palabras, pero NO como palabra independiente");
+            
+            // Mostrar algunos ejemplos de dónde aparece como substring
+            String contenidoLower = rawJsonContent.toLowerCase();
+            String palabraLower = palabra.toLowerCase();
+            int index = contenidoLower.indexOf(palabraLower);
+            int ejemplos = 0;
+            while (index >= 0 && ejemplos < 3) {
+                int inicioContexto = Math.max(0, index - 15);
+                int finContexto = Math.min(rawJsonContent.length(), index + palabra.length() + 15);
+                String contextoEjemplo = rawJsonContent.substring(inicioContexto, finContexto).replaceAll("\\s+", " ");
+                System.out.println("  Ejemplo " + (ejemplos + 1) + ": ..." + contextoEjemplo + "...");
+                index = contenidoLower.indexOf(palabraLower, index + 1);
+                ejemplos++;
+            }
+        } else {
+            System.out.println("ℹ Confirmado: La secuencia '" + palabra + "' no aparece en absoluto en el archivo");
+        }
+    }
+}
     
     // Método mejorado para parsear JSON que maneja comentarios
-private void parseJsonContent() {
+    private void parseJsonContent() {
     try {
         // Mostrar el contenido original para depuración
         System.out.println("=== CONTENIDO JSON ORIGINAL ===");
@@ -590,4 +656,143 @@ private void parseJsonContent() {
             return null;
         }
     }
+
+    // Agregar estos métodos a tu JsonValidationSteps.java existente:
+
+@Then("el archivo debe contener la palabra {string}")
+public void elArchivoDebeContenerLaPalabra(String palabra) {
+    System.out.println("\n===== VERIFICANDO EXISTENCIA DE PALABRA =====");
+    System.out.println("Palabra a buscar: '" + palabra + "'");
+    
+    if (rawJsonContent == null || rawJsonContent.isEmpty()) {
+        String errorMsg = "El contenido del archivo está vacío o no se ha cargado";
+        System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+        validationErrors.add(errorMsg);
+        return;
+    }
+    
+    boolean encontrada = rawJsonContent.contains(palabra);
+    System.out.println("¿Palabra encontrada? " + encontrada);
+    
+    if (!encontrada) {
+        String errorMsg = "La palabra '" + palabra + "' no fue encontrada en el archivo";
+        System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+        validationErrors.add(errorMsg);
+    } else {
+        System.out.println("✓ Palabra encontrada exitosamente");
+    }
+}
+
+
+
+@Then("el archivo debe contener al menos una de las palabras: {string}")
+public void elArchivoDebeContenerAlMenosUnaDeLasPalabras(String palabrasStr) {
+    System.out.println("\n===== VERIFICANDO EXISTENCIA DE AL MENOS UNA PALABRA =====");
+    
+    String[] palabras = palabrasStr.split(",");
+    System.out.println("Palabras a buscar: " + String.join(", ", palabras));
+    
+    if (rawJsonContent == null || rawJsonContent.isEmpty()) {
+        String errorMsg = "El contenido del archivo está vacío o no se ha cargado";
+        System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+        validationErrors.add(errorMsg);
+        return;
+    }
+    
+    boolean algunaEncontrada = false;
+    List<String> palabrasEncontradas = new ArrayList<>();
+    
+    for (String palabra : palabras) {
+        palabra = palabra.trim();
+        if (rawJsonContent.contains(palabra)) {
+            algunaEncontrada = true;
+            palabrasEncontradas.add(palabra);
+        }
+    }
+    
+    System.out.println("Palabras encontradas: " + 
+        (palabrasEncontradas.isEmpty() ? "ninguna" : String.join(", ", palabrasEncontradas)));
+    
+    if (!algunaEncontrada) {
+        String errorMsg = "Ninguna de las palabras [" + palabrasStr + "] fue encontrada en el archivo";
+        System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+        validationErrors.add(errorMsg);
+    } else {
+        System.out.println("✓ Al menos una palabra fue encontrada exitosamente");
+    }
+}
+
+@Then("el archivo debe contener todas las palabras: {string}")
+public void elArchivoDebeContenerTodasLasPalabras(String palabrasStr) {
+    try {
+        System.out.println("\n===== VERIFICANDO EXISTENCIA DE TODAS LAS PALABRAS =====");
+        
+        if (palabrasStr == null || palabrasStr.trim().isEmpty()) {
+            String errorMsg = "La lista de palabras a buscar está vacía";
+            System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+            validationErrors.add(errorMsg);
+            return;
+        }
+        
+        String[] palabras = palabrasStr.split(",");
+        System.out.println("Palabras que deben existir: " + String.join(", ", palabras));
+        
+        if (rawJsonContent == null || rawJsonContent.isEmpty()) {
+            String errorMsg = "El contenido del archivo está vacío o no se ha cargado";
+            System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+            validationErrors.add(errorMsg);
+            return;
+        }
+        
+        List<String> palabrasEncontradas = new ArrayList<>();
+        List<String> palabrasNoEncontradas = new ArrayList<>();
+        
+        for (String palabra : palabras) {
+            palabra = palabra.trim();
+            if (rawJsonContent.contains(palabra)) {
+                palabrasEncontradas.add(palabra);
+            } else {
+                palabrasNoEncontradas.add(palabra);
+            }
+        }
+        
+        System.out.println("Palabras encontradas: " + 
+            (palabrasEncontradas.isEmpty() ? "ninguna" : String.join(", ", palabrasEncontradas)));
+        System.out.println("Palabras NO encontradas: " + 
+            (palabrasNoEncontradas.isEmpty() ? "ninguna" : String.join(", ", palabrasNoEncontradas)));
+        
+        if (!palabrasNoEncontradas.isEmpty()) {
+            String errorMsg = "Las siguientes palabras no fueron encontradas: [" + 
+                            String.join(", ", palabrasNoEncontradas) + "]";
+            System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+            validationErrors.add(errorMsg);
+        } else {
+            System.out.println("✓ Todas las palabras fueron encontradas exitosamente");
+        }
+    } catch (Exception e) {
+        String errorMsg = "Error al verificar las palabras '" + palabrasStr + "': " + e.getMessage();
+        System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+        validationErrors.add(errorMsg);
+    }
+}
+
+// Hook para ejecutar después de cada escenario y validar todos los errores acumulados
+@After
+public void validarTodosLosErrores() {
+    if (!validationErrors.isEmpty()) {
+        System.err.println("\n===== RESUMEN DE ERRORES DE VALIDACIÓN JSON =====");
+        for (int i = 0; i < validationErrors.size(); i++) {
+            System.err.println((i + 1) + ". " + validationErrors.get(i));
+        }
+        System.err.println("================================================\n");
+        
+        String errorMessage = "Se encontraron " + validationErrors.size() + 
+                            " errores de validación: " + String.join("; ", validationErrors);
+        
+        // Limpiar errores para el próximo escenario
+        validationErrors.clear();
+        
+        throw new AssertionError(errorMessage);
+    }
+}
 }

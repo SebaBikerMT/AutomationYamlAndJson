@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.confuturo.runners.CucumberRunner
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.706 s - in com.confuturo.runners.CucumberRunner
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.751 s - in com.confuturo.runners.CucumberRunner
