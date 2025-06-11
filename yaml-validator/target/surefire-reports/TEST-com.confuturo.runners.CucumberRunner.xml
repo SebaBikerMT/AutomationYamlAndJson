@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.confuturo.runners.CucumberRunner" time="12.751" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.confuturo.runners.CucumberRunner" time="24.986" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CL"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\spena\AppData\Local\Temp\surefire3179920131104421904\surefirebooter-20250609131752976_3.jar C:\Users\spena\AppData\Local\Temp\surefire3179920131104421904 2025-06-09T13-17-52_663-jvmRun1 surefire-20250609131752976_1tmp surefire_0-20250609131752976_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\spena\AppData\Local\Temp\surefire13324019871047188335\surefirebooter-20250611142125843_3.jar C:\Users\spena\AppData\Local\Temp\surefire13324019871047188335 2025-06-11T14-21-25_545-jvmRun1 surefire-20250611142125843_1tmp surefire_0-20250611142125843_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\target\test-classes;C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\target\classes;C:\Users\spena\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\spena\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\spena\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\spena\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\spena\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\spena\.m2\repository\io\github\cdimascio\dotenv-java\2.3.2\dotenv-java-2.3.2.jar;C:\Users\spena\.m2\repository\org\json\json\20230618\json-20230618.jar;C:\Users\spena\.m2\repository\org\gitlab4j\gitlab4j-api\5.4.0\gitlab4j-api-5.4.0.jar;C:\Users\spena\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\2.39.1\jersey-hk2-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-common\2.39.1\jersey-common-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-locator\2.6.1\hk2-locator-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.6.1\aopalliance-repackaged-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-api\2.6.1\hk2-api-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-utils\2.6.1\hk2-utils-2.6.1.jar;C:\Users\spena\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-client\2.39.1\jersey-client-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\2.1.6\jakarta.ws.rs-api-2.1.6.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\jakarta.inject\2.6.1\jakarta.inject-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\connectors\jersey-apache-connector\2.39.1\jersey-apache-connector-2.39.1.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\spena\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\spena\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-multipart\2.39.1\jersey-media-multipart-2.39.1.jar;C:\Users\spena\.m2\repository\org\jvnet\mimepull\mimepull\1.9.15\mimepull-1.9.15.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-json-jackson\2.39.1\jersey-media-json-jackson-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\ext\jersey-entity-filtering\2.39.1\jersey-entity-filtering-2.39.1.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.14.1\jackson-module-jaxb-annotations-2.14.1.jar;C:\Users\spena\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\spena\.m2\repository\jakarta\servlet\jakarta.servlet-api\4.0.4\jakarta.servlet-api-4.0.4.jar;C:\Users\spena\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\spena\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\spena\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\spena\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\spena\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\spena\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\spena\AppData\Local\Temp\surefire3179920131104421904\surefirebooter-20250609131752976_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\spena\AppData\Local\Temp\surefire13324019871047188335\surefirebooter-20250611142125843_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.4+8-LTS-274"/>
@@ -39,7 +39,6 @@
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="skipTest" value="true"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="localRepository" value="C:\Users\spena\.m2\repository"/>
@@ -59,9 +58,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Depuración del contenido JSON" classname="Validación de configuración del Backend.BackOffice.Zendesk #1" time="2.189">
+  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="2.509">
     <system-out><![CDATA[
 Escenario: Depuración del contenido JSON                                                                                     # src/test/resources/features/json-validation-development.feature:8
+
+===== INICIANDO ESCENARIO =====
+Nombre: Depuración del contenido JSON
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
 Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
@@ -254,11 +256,17 @@ JSON parseado correctamente utilizando Jackson
 - ConnectionStrings
 === FIN DE CLAVES DE PRIMER NIVEL ===
   Entonces imprimo el contenido del JSON para depuración                                                                     # com.confuturo.steps.JsonValidationSteps.imprimoElContenidoDelJsonParaDepuracion()
+
+===== ESCENARIO EXITOSO =====
+Nombre: Depuración del contenido JSON
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar la Url del Cliente" classname="Validación de configuración del Backend.BackOffice.Zendesk #1" time="1.096">
+  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="2.085">
     <system-out><![CDATA[
-Escenario: Verificar la Url del Cliente                                                                                      # src/test/resources/features/json-validation-development.feature:13
+Escenario: Verificar datos mas relevantes del archivo                                                                              # src/test/resources/features/json-validation-development.feature:13
+
+===== INICIANDO ESCENARIO =====
+Nombre: Verificar datos mas relevantes del archivo
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
 Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
@@ -267,7 +275,7 @@ Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\Automat
 Token encontrado en archivo .env: ../.env
 Conexión a GitLab establecida correctamente
 Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
-  Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager" # com.confuturo.steps.JsonValidationSteps.queAccesoAlRepositorioJson(java.lang.String)
+  Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager"       # com.confuturo.steps.JsonValidationSteps.queAccesoAlRepositorioJson(java.lang.String)
 Intentando leer archivo JSON: src/Backend.BackOffice.Zendesk/appsettings.Development.json del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Proyecto encontrado con ID: 61972501
 Intentando obtener archivo de la rama: develop
@@ -362,16 +370,38 @@ JSON parseado correctamente utilizando Jackson
 - Keycloak
 - ConnectionStrings
 ======================================
-  Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json"                                   # com.confuturo.steps.JsonValidationSteps.leoElArchivoJson(java.lang.String)
+  Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json"                                         # com.confuturo.steps.JsonValidationSteps.leoElArchivoJson(java.lang.String)
 Campo: Apis.Client.Url
 Valor esperado: 'http://api-clientes.qa.seguros.local/clientes/'
 Valor actual: 'http://api-clientes.qa.seguros.local/clientes/'
-  Entonces el JSON debe contener el campo "Apis.Client.Url" con valor "http://api-clientes.qa.seguros.local/clientes/"       # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+  Entonces el JSON debe contener el campo "Apis.Client.Url" con valor "http://api-clientes.qa.seguros.local/clientes/"             # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+Campo: Apis.Product.Url
+Valor esperado: 'http://api-productos.qa.seguros.local/'
+Valor actual: 'http://api-productos.qa.seguros.local/'
+  Y el JSON debe contener el campo "Apis.Product.Url" con valor "http://api-productos.qa.seguros.local/"                           # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+Campo: Apis.Payment.Url
+Valor esperado: 'http://api.qa.seguros.local/payment-service/'
+Valor actual: 'http://api.qa.seguros.local/payment-service/'
+  Y el JSON debe contener el campo "Apis.Payment.Url" con valor "http://api.qa.seguros.local/payment-service/"                     # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+Campo: Apis.Pdf.Url
+Valor esperado: 'https://pdf-service-42nqpimoca-uc.a.run.app/'
+Valor actual: 'https://pdf-service-42nqpimoca-uc.a.run.app/'
+  Y el JSON debe contener el campo "Apis.Pdf.Url" con valor "https://pdf-service-42nqpimoca-uc.a.run.app/"                         # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+Campo: Apis.Notifications.Url
+Valor esperado: 'http://api-notificaciones.qa.seguros.local/notificaciones/'
+Valor actual: 'http://api-notificaciones.qa.seguros.local/notificaciones/'
+  Y el JSON debe contener el campo "Apis.Notifications.Url" con valor "http://api-notificaciones.qa.seguros.local/notificaciones/" # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: Verificar datos mas relevantes del archivo
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar el modo de prueba" classname="Validación de configuración del Backend.BackOffice.Zendesk #1" time="1.018">
+  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="1.725">
     <system-out><![CDATA[
-Escenario: Verificar el modo de prueba                                                                                       # src/test/resources/features/json-validation-development.feature:18
+Escenario: Verificar que el documento no contiene enlaces a rutas equivocadas                                                # src/test/resources/features/json-validation-development.feature:22
+
+===== INICIANDO ESCENARIO =====
+Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
 Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
@@ -476,15 +506,308 @@ JSON parseado correctamente utilizando Jackson
 - ConnectionStrings
 ======================================
   Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json"                                   # com.confuturo.steps.JsonValidationSteps.leoElArchivoJson(java.lang.String)
-Campo: TestMode
-Valor esperado: true
-Valor actual: true
-  Entonces el JSON debe contener el campo "TestMode" con valor booleano "true"                                               # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorBooleano(java.lang.String,java.lang.String)
+
+===== VERIFICANDO QUE NO EXISTA LA PALABRA EXACTA =====
+Palabra EXACTA que NO debe existir: 'prod'
+Nota: Solo busca la palabra completa, no como parte de otras palabras
+Patrón de búsqueda (palabra exacta): \b\Qprod\E\b
+¿Palabra EXACTA encontrada? false
+✓ Correcto: La palabra EXACTA 'prod' NO fue encontrada
+ℹ Nota informativa: La secuencia 'prod' SÍ aparece como parte de otras palabras, pero NO como palabra independiente
+  Ejemplo 1: ... }, "Product": { ...
+  Ejemplo 2: ...": "http://api-productos.qa.seguro...
+  Ejemplo 3: ...2884", "ProductFamily": "20...
+  Entonces el archivo Json NO debe contener la palabra "prod"                                                                # com.confuturo.steps.JsonValidationSteps.elArchivoJsonNoDebeContenerLaPalabra(java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 ]]></system-out>
   </testcase>
-  <testcase name="Depuración del contenido JSON" classname="Validación de configuración del Backend.BackOffice.Zendesk #2" time="1.144">
+  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="1.845">
+    <system-out><![CDATA[
+Escenario: Depuración del contenido JSON                                                                                     # src/test/resources/features/json-validation-prod.feature:8
+
+===== INICIANDO ESCENARIO =====
+Nombre: Depuración del contenido JSON
+Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
+Buscando token en archivo .env...
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Token encontrado en archivo .env: ../.env
+Conexión a GitLab establecida correctamente
+Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
+  Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager" # com.confuturo.steps.JsonValidationSteps.queAccesoAlRepositorioJson(java.lang.String)
+Intentando leer archivo JSON: src/Backend.BackOffice.Zendesk/appsettings.Prod.json del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
+Proyecto encontrado con ID: 61972501
+Intentando obtener archivo de la rama: develop
+Archivo encontrado en la rama: develop
+Contenido JSON guardado en 'gitlab-json-content.txt'
+=== CONTENIDO JSON ORIGINAL ===
+{
+  "AppSettings": {
+    "Version": "0.01.202411201030"
+  },
+  "ConnectionStrings": {
+    "PensionesDB": "connection-string",
+    "TransactionsDB": "connection-string"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "Apis": {
+    "UrlClients": "http://api.seguros.local/clientes",
+    "UrlProductos": "http://api.confuturo.cl/productos",
+    "UrlPayment": "http://api.seguros.local/payment-service/",
+    "Zendesk": {
+      "Url": "zendesk-data",
+      "Token": "zendesk-data",
+      "SendTicketFromEmail": true,
+      "Ticket": {
+        "Channel": "zendesk-data"
+      }
+    }
+  },
+  "Keycloak": {
+    "Url": "keycloak-url",
+    "ClientId": "keycloak-url"
+  }
+}
+=== FIN DEL CONTENIDO ORIGINAL ===
+JSON limpio guardado en 'cleaned-json-content.txt'
+JSON parseado correctamente utilizando Jackson
+=== CLAVES DE PRIMER NIVEL EN EL JSON ===
+- Logging
+- AppSettings
+- Apis
+- Keycloak
+- ConnectionStrings
+======================================
+  Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Prod.json"                                          # com.confuturo.steps.JsonValidationSteps.leoElArchivoJson(java.lang.String)
+=== CONTENIDO JSON RECUPERADO ===
+{
+  "AppSettings": {
+    "Version": "0.01.202411201030"
+  },
+  "ConnectionStrings": {
+    "PensionesDB": "connection-string",
+    "TransactionsDB": "connection-string"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "Apis": {
+    "UrlClients": "http://api.seguros.local/clientes",
+    "UrlProductos": "http://api.confuturo.cl/productos",
+    "UrlPayment": "http://api.seguros.local/payment-service/",
+    "Zendesk": {
+      "Url": "zendesk-data",
+      "Token": "zendesk-data",
+      "SendTicketFromEmail": true,
+      "Ticket": {
+        "Channel": "zendesk-data"
+      }
+    }
+  },
+  "Keycloak": {
+    "Url": "keycloak-url",
+    "ClientId": "keycloak-url"
+  }
+}
+=== FIN DEL CONTENIDO JSON ===
+=== CLAVES DE PRIMER NIVEL ===
+- Logging
+- AppSettings
+- Apis
+- Keycloak
+- ConnectionStrings
+=== FIN DE CLAVES DE PRIMER NIVEL ===
+  Entonces imprimo el contenido del JSON para depuración                                                                     # com.confuturo.steps.JsonValidationSteps.imprimoElContenidoDelJsonParaDepuracion()
+
+===== ESCENARIO EXITOSO =====
+Nombre: Depuración del contenido JSON
+]]></system-out>
+  </testcase>
+  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="2.007">
+    <system-out><![CDATA[
+Escenario: Verificar datos mas relevantes del archivo                                                                        # src/test/resources/features/json-validation-prod.feature:13
+
+===== INICIANDO ESCENARIO =====
+Nombre: Verificar datos mas relevantes del archivo
+Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
+Buscando token en archivo .env...
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Token encontrado en archivo .env: ../.env
+Conexión a GitLab establecida correctamente
+Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
+  Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager" # com.confuturo.steps.JsonValidationSteps.queAccesoAlRepositorioJson(java.lang.String)
+Intentando leer archivo JSON: src/Backend.BackOffice.Zendesk/appsettings.Prod.json del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
+Proyecto encontrado con ID: 61972501
+Intentando obtener archivo de la rama: develop
+Archivo encontrado en la rama: develop
+Contenido JSON guardado en 'gitlab-json-content.txt'
+=== CONTENIDO JSON ORIGINAL ===
+{
+  "AppSettings": {
+    "Version": "0.01.202411201030"
+  },
+  "ConnectionStrings": {
+    "PensionesDB": "connection-string",
+    "TransactionsDB": "connection-string"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "Apis": {
+    "UrlClients": "http://api.seguros.local/clientes",
+    "UrlProductos": "http://api.confuturo.cl/productos",
+    "UrlPayment": "http://api.seguros.local/payment-service/",
+    "Zendesk": {
+      "Url": "zendesk-data",
+      "Token": "zendesk-data",
+      "SendTicketFromEmail": true,
+      "Ticket": {
+        "Channel": "zendesk-data"
+      }
+    }
+  },
+  "Keycloak": {
+    "Url": "keycloak-url",
+    "ClientId": "keycloak-url"
+  }
+}
+=== FIN DEL CONTENIDO ORIGINAL ===
+JSON limpio guardado en 'cleaned-json-content.txt'
+JSON parseado correctamente utilizando Jackson
+=== CLAVES DE PRIMER NIVEL EN EL JSON ===
+- Logging
+- AppSettings
+- Apis
+- Keycloak
+- ConnectionStrings
+======================================
+  Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Prod.json"                                          # com.confuturo.steps.JsonValidationSteps.leoElArchivoJson(java.lang.String)
+Campo: Apis.UrlClients
+Valor esperado: 'http://api.seguros.local/clientes'
+Valor actual: 'http://api.seguros.local/clientes'
+  Entonces el JSON debe contener el campo "Apis.UrlClients" con valor "http://api.seguros.local/clientes"                    # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+Campo: Apis.UrlProductos
+Valor esperado: 'http://api.confuturo.cl/productos'
+Valor actual: 'http://api.confuturo.cl/productos'
+  Y el JSON debe contener el campo "Apis.UrlProductos" con valor "http://api.confuturo.cl/productos"                         # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+Campo: Apis.UrlPayment
+Valor esperado: 'http://api.seguros.local/payment-service/'
+Valor actual: 'http://api.seguros.local/payment-service/'
+  Y el JSON debe contener el campo "Apis.UrlPayment" con valor "http://api.seguros.local/payment-service/"                   # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: Verificar datos mas relevantes del archivo
+]]></system-out>
+  </testcase>
+  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="1.754">
+    <system-out><![CDATA[
+Escenario: Verificar que el documento no contiene enlaces a rutas equivocadas                                                # src/test/resources/features/json-validation-prod.feature:20
+
+===== INICIANDO ESCENARIO =====
+Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
+Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
+Buscando token en archivo .env...
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
+Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\..\.env
+Token encontrado en archivo .env: ../.env
+Conexión a GitLab establecida correctamente
+Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
+  Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager" # com.confuturo.steps.JsonValidationSteps.queAccesoAlRepositorioJson(java.lang.String)
+Intentando leer archivo JSON: src/Backend.BackOffice.Zendesk/appsettings.Prod.json del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
+Proyecto encontrado con ID: 61972501
+Intentando obtener archivo de la rama: develop
+Archivo encontrado en la rama: develop
+Contenido JSON guardado en 'gitlab-json-content.txt'
+=== CONTENIDO JSON ORIGINAL ===
+{
+  "AppSettings": {
+    "Version": "0.01.202411201030"
+  },
+  "ConnectionStrings": {
+    "PensionesDB": "connection-string",
+    "TransactionsDB": "connection-string"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "Apis": {
+    "UrlClients": "http://api.seguros.local/clientes",
+    "UrlProductos": "http://api.confuturo.cl/productos",
+    "UrlPayment": "http://api.seguros.local/payment-service/",
+    "Zendesk": {
+      "Url": "zendesk-data",
+      "Token": "zendesk-data",
+      "SendTicketFromEmail": true,
+      "Ticket": {
+        "Channel": "zendesk-data"
+      }
+    }
+  },
+  "Keycloak": {
+    "Url": "keycloak-url",
+    "ClientId": "keycloak-url"
+  }
+}
+=== FIN DEL CONTENIDO ORIGINAL ===
+JSON limpio guardado en 'cleaned-json-content.txt'
+JSON parseado correctamente utilizando Jackson
+=== CLAVES DE PRIMER NIVEL EN EL JSON ===
+- Logging
+- AppSettings
+- Apis
+- Keycloak
+- ConnectionStrings
+======================================
+  Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Prod.json"                                          # com.confuturo.steps.JsonValidationSteps.leoElArchivoJson(java.lang.String)
+
+===== VERIFICANDO QUE NO EXISTA LA PALABRA EXACTA =====
+Palabra EXACTA que NO debe existir: 'qa'
+Nota: Solo busca la palabra completa, no como parte de otras palabras
+Patrón de búsqueda (palabra exacta): \b\Qqa\E\b
+¿Palabra EXACTA encontrada? false
+✓ Correcto: La palabra EXACTA 'qa' NO fue encontrada
+ℹ Confirmado: La secuencia 'qa' no aparece en absoluto en el archivo
+  Entonces el archivo Json NO debe contener la palabra "qa"                                                                  # com.confuturo.steps.JsonValidationSteps.elArchivoJsonNoDebeContenerLaPalabra(java.lang.String)
+
+===== VERIFICANDO QUE NO EXISTA LA PALABRA EXACTA =====
+Palabra EXACTA que NO debe existir: 'development'
+Nota: Solo busca la palabra completa, no como parte de otras palabras
+Patrón de búsqueda (palabra exacta): \b\Qdevelopment\E\b
+¿Palabra EXACTA encontrada? false
+✓ Correcto: La palabra EXACTA 'development' NO fue encontrada
+ℹ Confirmado: La secuencia 'development' no aparece en absoluto en el archivo
+  Y el archivo Json NO debe contener la palabra "development"                                                                # com.confuturo.steps.JsonValidationSteps.elArchivoJsonNoDebeContenerLaPalabra(java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
+]]></system-out>
+  </testcase>
+  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de QA" time="1.486">
     <system-out><![CDATA[
 Escenario: Depuración del contenido JSON                                                                                     # src/test/resources/features/json-validation-qa.feature:8
+
+===== INICIANDO ESCENARIO =====
+Nombre: Depuración del contenido JSON
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
 Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
@@ -597,11 +920,17 @@ JSON parseado correctamente utilizando Jackson
 - ConnectionStrings
 === FIN DE CLAVES DE PRIMER NIVEL ===
   Entonces imprimo el contenido del JSON para depuración                                                                     # com.confuturo.steps.JsonValidationSteps.imprimoElContenidoDelJsonParaDepuracion()
+
+===== ESCENARIO EXITOSO =====
+Nombre: Depuración del contenido JSON
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar la Url del Cliente" classname="Validación de configuración del Backend.BackOffice.Zendesk #2" time="0.957">
+  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de QA" time="1.708">
     <system-out><![CDATA[
-Escenario: Verificar la Url del Cliente                                                                                      # src/test/resources/features/json-validation-qa.feature:13
+Escenario: Verificar datos mas relevantes del archivo                                                                        # src/test/resources/features/json-validation-qa.feature:13
+
+===== INICIANDO ESCENARIO =====
+Nombre: Verificar datos mas relevantes del archivo
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
 Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
@@ -670,11 +999,33 @@ Campo: Apis.UrlClients
 Valor esperado: 'http://api-clientes.qa.seguros.local/clientes/'
 Valor actual: 'http://api-clientes.qa.seguros.local/clientes/'
   Entonces el JSON debe contener el campo "Apis.UrlClients" con valor "http://api-clientes.qa.seguros.local/clientes/"       # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+Campo: Apis.UrlProductos
+Valor esperado: 'http://api-productos.qa.seguros.local/'
+Valor actual: 'http://api-productos.qa.seguros.local/'
+  Y el JSON debe contener el campo "Apis.UrlProductos" con valor "http://api-productos.qa.seguros.local/"                    # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+Campo: Apis.UrlPayment
+Valor esperado: 'http://api.qa.seguros.local/payment-service/'
+Valor actual: 'http://api.qa.seguros.local/payment-service/'
+  Y el JSON debe contener el campo "Apis.UrlPayment" con valor "http://api.qa.seguros.local/payment-service/"                # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+Campo: Keycloak.Url
+Valor esperado: 'http://auth-qa.confuturo.cl/auth'
+Valor actual: 'http://auth-qa.confuturo.cl/auth'
+  Y el JSON debe contener el campo "Keycloak.Url" con valor "http://auth-qa.confuturo.cl/auth"                               # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+Campo: Keycloak.Realm
+Valor esperado: 'confuturo-sso-qa'
+Valor actual: 'confuturo-sso-qa'
+  Y el JSON debe contener el campo "Keycloak.Realm" con valor "confuturo-sso-qa"                                             # com.confuturo.steps.JsonValidationSteps.elJsonDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: Verificar datos mas relevantes del archivo
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar el modo de prueba" classname="Validación de configuración del Backend.BackOffice.Zendesk #2" time="1.004">
+  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de QA" time="2.201">
     <system-out><![CDATA[
-Escenario: Verificar el modo de prueba                                                                                       # src/test/resources/features/json-validation-qa.feature:18
+Escenario: Verificar que el documento no contiene enlaces a rutas equivocadas                                                # src/test/resources/features/json-validation-qa.feature:23
+
+===== INICIANDO ESCENARIO =====
+Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
 Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
@@ -753,12 +1104,27 @@ Patrón de búsqueda (palabra exacta): \b\Qprod\E\b
 ℹ Nota informativa: La secuencia 'prod' SÍ aparece como parte de otras palabras, pero NO como palabra independiente
   Ejemplo 1: ...tes/", "UrlProductos": "http:/...
   Ejemplo 2: ...": "http://api-productos.qa.seguro...
-  Y el archivo NO debe contener la palabra "prod"                                                                            # com.confuturo.steps.JsonValidationSteps.elArchivoNoDebeContenerLaPalabra(java.lang.String)
+  Y el archivo Json NO debe contener la palabra "prod"                                                                       # com.confuturo.steps.JsonValidationSteps.elArchivoJsonNoDebeContenerLaPalabra(java.lang.String)
+
+===== VERIFICANDO QUE NO EXISTA LA PALABRA EXACTA =====
+Palabra EXACTA que NO debe existir: 'development'
+Nota: Solo busca la palabra completa, no como parte de otras palabras
+Patrón de búsqueda (palabra exacta): \b\Qdevelopment\E\b
+¿Palabra EXACTA encontrada? false
+✓ Correcto: La palabra EXACTA 'development' NO fue encontrada
+ℹ Confirmado: La secuencia 'development' no aparece en absoluto en el archivo
+  Y el archivo Json NO debe contener la palabra "development"                                                                # com.confuturo.steps.JsonValidationSteps.elArchivoJsonNoDebeContenerLaPalabra(java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion" classname="Validación de archivo YAML de valores para Kubernetes #1" time="1.391">
+  <testcase name="El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion" classname="Validación de configuración de archivo json en ambiente de Produccion #2" time="2.328">
     <system-out><![CDATA[
 Escenario: El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion                                                         # src/test/resources/features/yaml-validation_prod.feature:8
+
+===== INICIANDO ESCENARIO =====
+Nombre: El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
 Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
@@ -825,11 +1191,17 @@ Campo: vault.hashicorp.com/role
 Valor esperado: 'prod'
 Valor actual: 'prod'
   Y el archivo debe contener el campo "vault.hashicorp.com/role" con valor "prod"                                                                          # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de archivo YAML de valores para Kubernetes #1" time="1.271">
+  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de configuración de archivo json en ambiente de Produccion #2" time="1.61">
     <system-out><![CDATA[
 Escenario: El archivo YAML debe tener la configuración de servicios correcta                                            # src/test/resources/features/yaml-validation_prod.feature:24
+
+===== INICIANDO ESCENARIO =====
+Nombre: El archivo YAML debe tener la configuración de servicios correcta
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
 Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
@@ -852,11 +1224,17 @@ Campo: TestMode
 Valor esperado: false
 Valor actual: false
   Y el archivo debe contener el campo "TestMode" con valor false                                                        # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorFalse(java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: El archivo YAML debe tener la configuración de servicios correcta
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML de QA debe tener solo valores que hagan referencia a QA" classname="Validación de archivo YAML de valores para Kubernetes #2" time="1.019">
+  <testcase name="El archivo YAML de QA debe tener solo valores que hagan referencia a QA" classname="Validación de configuración de archivo yaml en ambiente de" time="1.756">
     <system-out><![CDATA[
 Escenario: El archivo YAML de QA debe tener solo valores que hagan referencia a QA                                                                         # src/test/resources/features/yaml-validation_qa.feature:8
+
+===== INICIANDO ESCENARIO =====
+Nombre: El archivo YAML de QA debe tener solo valores que hagan referencia a QA
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
 Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
@@ -923,11 +1301,17 @@ Campo: vault.hashicorp.com/role
 Valor esperado: 'qa'
 Valor actual: 'qa'
   Y el archivo debe contener el campo "vault.hashicorp.com/role" con valor "qa"                                                                            # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: El archivo YAML de QA debe tener solo valores que hagan referencia a QA
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de archivo YAML de valores para Kubernetes #2" time="1.011">
+  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de configuración de archivo yaml en ambiente de" time="1.343">
     <system-out><![CDATA[
 Escenario: El archivo YAML debe tener la configuración de servicios correcta                                                                     # src/test/resources/features/yaml-validation_qa.feature:24
+
+===== INICIANDO ESCENARIO =====
+Nombre: El archivo YAML debe tener la configuración de servicios correcta
 Conectando al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Buscando token en archivo .env...
 Comprobando archivo .env en: C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\.env
@@ -950,6 +1334,9 @@ Campo: TestMode
 Valor esperado: 'true  # modo test para el envio de los correos y la generacion de ticket en zendesk'
 Valor actual: 'true  # modo test para el envio de los correos y la generacion de ticket en zendesk'
   Y el archivo debe contener el campo "TestMode" con valor "true  # modo test para el envio de los correos y la generacion de ticket en zendesk" # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: El archivo YAML debe tener la configuración de servicios correcta
 ]]></system-out>
   </testcase>
 </testsuite>

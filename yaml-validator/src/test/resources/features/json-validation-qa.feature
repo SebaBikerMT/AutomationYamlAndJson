@@ -1,7 +1,7 @@
 # language: es
 # src/test/resources/features/configValidation.feature
-Característica: Validación de configuración del Backend.BackOffice.Zendesk
-  Como desarrollador
+Característica: Validación de configuración de archivo json en ambiente de QA
+  Como QA Automatizador
   Quiero validar que el archivo appsettings.QA.json tiene la configuración correcta
   Para asegurar que la aplicación funcionará adecuadamente
 
@@ -24,6 +24,6 @@ Característica: Validación de configuración del Backend.BackOffice.Zendesk
     Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager"
     Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json"
     Entonces el JSON debe contener el campo "TestMode" con valor booleano "true"
-    Y el archivo NO debe contener la palabra "prod"
-    Y el archivo NO debe contener la palabra "development"
+    Y el archivo Json NO debe contener la palabra "prod"
+    Y el archivo Json NO debe contener la palabra "development"
 

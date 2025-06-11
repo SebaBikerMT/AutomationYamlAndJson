@@ -1,6 +1,6 @@
 # language: es
 
-Característica: Validación de archivo YAML de valores para Kubernetes
+Característica: Validación de configuración de archivo json en ambiente de Produccion
   Como desarrollador
   Quiero validar que el archivo prod-values-gke.yaml tiene la configuración correcta
   Para evitar errores en el despliegue en producción

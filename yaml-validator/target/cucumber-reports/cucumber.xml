@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="17.249" tests="13" skipped="0" failures="1" errors="0">
-<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Depuración del contenido JSON" time="2.763">
+<testsuite name="Cucumber" time="24.423" tests="13" skipped="0" failures="0" errors="0">
+<testcase classname="Validación de configuración de archivo json en ambiente de Desarrollo" name="Depuración del contenido JSON" time="2.422">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json".passed
 Entonces imprimo el contenido del JSON para depuración......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Verificar datos mas relevantes del archivo" time="1.094">
+<testcase classname="Validación de configuración de archivo json en ambiente de Desarrollo" name="Verificar datos mas relevantes del archivo" time="2.077">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json".passed
@@ -18,26 +18,21 @@ Y el JSON debe contener el campo "Apis.Pdf.Url" con valor "https://pdf-service-4
 Y el JSON debe contener el campo "Apis.Notifications.Url" con valor "http://api-notificaciones.qa.seguros.local/notificaciones/".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Verificar que el documento no contiene enlaces a rutas equivocadas" time="1.687">
-<failure type="java.lang.AssertionError" message="Se encontraron 1 errores de validación: La palabra EXACTA '192.168.68' fue encontrada en el archivo pero NO debería estar presente. Contexto(s): ...Kta&quot;: { &quot;Url&quot;: &quot;http://192.168.68.19/vwnetx_Confuturo_Zendesk/&quot;...">
-<![CDATA[java.lang.AssertionError: Se encontraron 1 errores de validación: La palabra EXACTA '192.168.68' fue encontrada en el archivo pero NO debería estar presente. Contexto(s): ...Kta": { "Url": "http://192.168.68.19/vwnetx_Confuturo_Zendesk/"...
-	at com.confuturo.steps.JsonValidationSteps.validarTodosLosErrores(JsonValidationSteps.java:798)
-]]>
-</failure>
+<testcase classname="Validación de configuración de archivo json en ambiente de Desarrollo" name="Verificar que el documento no contiene enlaces a rutas equivocadas" time="1.718">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Development.json".passed
-Entonces el archivo NO debe contener la palabra "192.168.68"................passed
+Entonces el archivo Json NO debe contener la palabra "prod".................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Depuración del contenido JSON" time="1.049">
+<testcase classname="Validación de configuración de archivo json en ambiente de Produccion" name="Depuración del contenido JSON" time="1.843">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Prod.json".passed
 Entonces imprimo el contenido del JSON para depuración......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Verificar datos mas relevantes del archivo" time="1.546">
+<testcase classname="Validación de configuración de archivo json en ambiente de Produccion" name="Verificar datos mas relevantes del archivo" time="2.015">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Prod.json".passed
@@ -46,22 +41,22 @@ Y el JSON debe contener el campo "Apis.UrlProductos" con valor "http://api.confu
 Y el JSON debe contener el campo "Apis.UrlPayment" con valor "http://api.seguros.local/payment-service/".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Verificar que el documento no contiene enlaces a rutas equivocadas" time="1.172">
+<testcase classname="Validación de configuración de archivo json en ambiente de Produccion" name="Verificar que el documento no contiene enlaces a rutas equivocadas" time="1.734">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.Prod.json".passed
-Entonces el archivo NO debe contener la palabra "qa"........................passed
-Y el archivo NO debe contener la palabra "development"......................passed
+Entonces el archivo Json NO debe contener la palabra "qa"...................passed
+Y el archivo Json NO debe contener la palabra "development".................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Depuración del contenido JSON" time="1.14">
+<testcase classname="Validación de configuración de archivo json en ambiente de QA" name="Depuración del contenido JSON" time="1.483">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json".passed
 Entonces imprimo el contenido del JSON para depuración......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Verificar datos mas relevantes del archivo" time="1.062">
+<testcase classname="Validación de configuración de archivo json en ambiente de QA" name="Verificar datos mas relevantes del archivo" time="1.702">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json".passed
@@ -72,16 +67,16 @@ Y el JSON debe contener el campo "Keycloak.Url" con valor "http://auth-qa.confut
 Y el JSON debe contener el campo "Keycloak.Realm" con valor "confuturo-sso-qa".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validación de configuración del Backend.BackOffice.Zendesk" name="Verificar que el documento no contiene enlaces a rutas equivocadas" time="1.046">
+<testcase classname="Validación de configuración de archivo json en ambiente de QA" name="Verificar que el documento no contiene enlaces a rutas equivocadas" time="2.203">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio JSON "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo JSON "src/Backend.BackOffice.Zendesk/appsettings.QA.json".passed
 Entonces el JSON debe contener el campo "TestMode" con valor booleano "true".passed
-Y el archivo NO debe contener la palabra "prod".............................passed
-Y el archivo NO debe contener la palabra "development"......................passed
+Y el archivo Json NO debe contener la palabra "prod"........................passed
+Y el archivo Json NO debe contener la palabra "development".................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validación de archivo YAML de valores para Kubernetes" name="El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion" time="1.188">
+<testcase classname="Validación de configuración de archivo json en ambiente de Produccion" name="El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion" time="2.328">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo "helm/prod-values-gke.yaml"...........................passed
@@ -99,7 +94,7 @@ Y el archivo debe contener el campo "UrlVisualTime " con valor "http://prodapps2
 Y el archivo debe contener el campo "vault.hashicorp.com/role" con valor "prod".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validación de archivo YAML de valores para Kubernetes" name="El archivo YAML debe tener la configuración de servicios correcta" time="1.043">
+<testcase classname="Validación de configuración de archivo json en ambiente de Produccion" name="El archivo YAML debe tener la configuración de servicios correcta" time="1.618">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo "helm/prod-values-gke.yaml"...........................passed
@@ -107,7 +102,7 @@ Entonces el archivo debe contener el campo "serviceAccount.create" con valor tru
 Y el archivo debe contener el campo "TestMode" con valor false..............passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validación de archivo YAML de valores para Kubernetes" name="El archivo YAML de QA debe tener solo valores que hagan referencia a QA" time="1.234">
+<testcase classname="Validación de configuración de archivo yaml en ambiente de" name="El archivo YAML de QA debe tener solo valores que hagan referencia a QA" time="1.74">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo "helm/qa-values-gke.yaml".............................passed
@@ -125,7 +120,7 @@ Y el archivo debe contener el campo "UrlVisualTime" con valor "http://testapps29
 Y el archivo debe contener el campo "vault.hashicorp.com/role" con valor "qa".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validación de archivo YAML de valores para Kubernetes" name="El archivo YAML debe tener la configuración de servicios correcta" time="0.982">
+<testcase classname="Validación de configuración de archivo yaml en ambiente de" name="El archivo YAML debe tener la configuración de servicios correcta" time="1.344">
 <system-out><![CDATA[
 Dado que tengo acceso al repositorio "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager".passed
 Cuando leo el archivo "helm/qa-values-gke.yaml".............................passed

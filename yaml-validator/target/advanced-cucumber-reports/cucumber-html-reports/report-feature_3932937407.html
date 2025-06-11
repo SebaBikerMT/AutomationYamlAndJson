@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 1.0-SNAPSHOT) - Feature: Validaci&amp;oacute;n de configuraci&amp;oacute;n del Backend.BackOffice.Zendesk</title>
+<title>Cucumber Reports (no 1.0-SNAPSHOT) - Feature: Validaci&amp;oacute;n de configuraci&amp;oacute;n de archivo json en ambiente de Desarrollo</title>
 
 </head>
 <body>
@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Automatizaci&oacute;n archivos Yaml y Json - Confuturo</td>
         <td>1.0-SNAPSHOT</td>
-      <td>09 jun 2025, 16:59</td>
+      <td>11 jun 2025, 14:21</td>
     </tr>
   </tbody>
 </table>
@@ -128,7 +128,7 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Validaci&oacute;n de configuraci&oacute;n del Backend.BackOffice.Zendesk</td>
+          <td class="tagname">Validaci&oacute;n de configuraci&oacute;n de archivo json en ambiente de Desarrollo</td>
           <td      class="passed"    >13</td>
           <td >0</td>
           <td >0</td>
@@ -136,12 +136,12 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">13</td>
 
-          <td  class="passed"    >2</td>
-          <td  class="failed"    >1</td>
+          <td  class="passed"    >3</td>
+          <td >0</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="5512940800">5.512</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="6187470800">6.187</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -173,14 +173,14 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Caracter&iacute;stica</span>
-  <span class="name">Validaci&oacute;n de configuraci&oacute;n del Backend.BackOffice.Zendesk</span>
+  <span class="name">Validaci&oacute;n de configuraci&oacute;n de archivo json en ambiente de Desarrollo</span>
 
 
 </div>
 
-        <div class="description indention">  Como desarrollador
+        <div class="description indention">  Como QA Automatizador
   Quiero validar que el archivo appsettings.Development.json tiene la configuraci&oacute;n correcta
   Para asegurar que la aplicaci&oacute;n funcionar&aacute; adecuadamente</div>
 
@@ -193,7 +193,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.732</span>
+  <span class="lead-duration duration">2.406</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -212,11 +212,43 @@ $(document).ready(function() {
   <div id="element-1" class="collapse collapsable-details ">
 
 
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.confuturo.steps.JsonValidationSteps.beforeScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -228,7 +260,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -236,7 +268,7 @@ $(document).ready(function() {
   <span class="keyword indention">Dado</span>
   <span class="name">que tengo acceso al repositorio JSON <span class="argument">&quot;confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager&quot;</span></span>
 
-  <span class="lead-duration duration">1.076</span>
+  <span class="lead-duration duration">1.328</span>
 
 </div>
 
@@ -263,7 +295,7 @@ $(document).ready(function() {
   <span class="keyword indention">Cuando</span>
   <span class="name">leo el archivo JSON <span class="argument">&quot;src/Backend.BackOffice.Zendesk/appsettings.Development.json&quot;</span></span>
 
-  <span class="lead-duration duration">1.655</span>
+  <span class="lead-duration duration">1.078</span>
 
 </div>
 
@@ -317,7 +349,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -329,13 +361,29 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-3" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.confuturo.steps.JsonValidationSteps.afterScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.confuturo.steps.JsonValidationSteps.validarTodosLosErrores()</span>
 
-  <span class="lead-duration duration">0.015</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -360,10 +408,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.094</span>
+  <span class="lead-duration duration">2.075</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
 
 <div class="brief passed">
   <span class="keyword indention">Escenario</span>
@@ -376,14 +424,46 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details ">
+  <div id="element-5" class="collapse collapsable-details ">
 
 
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-6" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.confuturo.steps.JsonValidationSteps.beforeScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -395,7 +475,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -403,7 +483,7 @@ $(document).ready(function() {
   <span class="keyword indention">Dado</span>
   <span class="name">que tengo acceso al repositorio JSON <span class="argument">&quot;confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager&quot;</span></span>
 
-  <span class="lead-duration duration">0.377</span>
+  <span class="lead-duration duration">0.528</span>
 
 </div>
 
@@ -430,7 +510,7 @@ $(document).ready(function() {
   <span class="keyword indention">Cuando</span>
   <span class="name">leo el archivo JSON <span class="argument">&quot;src/Backend.BackOffice.Zendesk/appsettings.Development.json&quot;</span></span>
 
-  <span class="lead-duration duration">0.717</span>
+  <span class="lead-duration duration">1.546</span>
 
 </div>
 
@@ -592,7 +672,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -604,7 +684,23 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.confuturo.steps.JsonValidationSteps.afterScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -635,12 +731,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.686</span>
+  <span class="lead-duration duration">1.705</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Escenario</span>
   <span class="name">Verificar que el documento no contiene enlaces a rutas equivocadas</span>
 
@@ -651,14 +747,46 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details  in ">
+  <div id="element-9" class="collapse collapsable-details ">
 
 
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-10" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.confuturo.steps.JsonValidationSteps.beforeScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -670,7 +798,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -678,7 +806,7 @@ $(document).ready(function() {
   <span class="keyword indention">Dado</span>
   <span class="name">que tengo acceso al repositorio JSON <span class="argument">&quot;confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager&quot;</span></span>
 
-  <span class="lead-duration duration">0.375</span>
+  <span class="lead-duration duration">0.501</span>
 
 </div>
 
@@ -705,7 +833,7 @@ $(document).ready(function() {
   <span class="keyword indention">Cuando</span>
   <span class="name">leo el archivo JSON <span class="argument">&quot;src/Backend.BackOffice.Zendesk/appsettings.Development.json&quot;</span></span>
 
-  <span class="lead-duration duration">1.310</span>
+  <span class="lead-duration duration">1.203</span>
 
 </div>
 
@@ -730,7 +858,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-Entonces passed">
   <span class="keyword indention">Entonces</span>
-  <span class="name">el archivo NO debe contener la palabra <span class="argument">&quot;192.168.68&quot;</span></span>
+  <span class="name">el archivo Json NO debe contener la palabra <span class="argument">&quot;prod&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -759,9 +887,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-9">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -771,9 +899,25 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-9" class="inner-level collapse collapsable-details  in ">
+    <div id="after-12" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief failed">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.confuturo.steps.JsonValidationSteps.afterScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.confuturo.steps.JsonValidationSteps.validarTodosLosErrores()</span>
 
@@ -782,19 +926,6 @@ $(document).ready(function() {
           </div>
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
-          <a>Error message</a>
-      </div>
-      <div id="msg-10" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: Se encontraron 1 errores de validaci&oacute;n: La palabra EXACTA '192.168.68' fue encontrada en el archivo pero NO deber&iacute;a estar presente. Contexto(s): ...Kta&quot;: { &quot;Url&quot;: &quot;http://192.168.68.19/vwnetx_Confuturo_Zendesk/&quot;...
-	at com.confuturo.steps.JsonValidationSteps.validarTodosLosErrores(JsonValidationSteps.java:798)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 

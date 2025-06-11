@@ -24,7 +24,7 @@ public class JsonValidationSteps {
     private JSONObject jsonContent;
     private List<String> validationErrors = new ArrayList<>(); // Lista para registrar errores
     private String cleanedJsonContent; // Contenido JSON sin comentarios
-    /* 
+     
     @Before
     public void beforeScenario(io.cucumber.java.Scenario scenario) {
         System.out.println("\n===== INICIANDO ESCENARIO =====");
@@ -57,7 +57,7 @@ public class JsonValidationSteps {
             System.out.println("Nombre: " + scenario.getName());
         }
     }
-    */
+    
     // Método para probar la conexión con GitLab
     public boolean testGitLabConnection() {
         try {
@@ -205,8 +205,8 @@ public class JsonValidationSteps {
         }
     }
 
-    @Then("el archivo NO debe contener la palabra {string}")
-    public void elArchivoNoDebeContenerLaPalabra(String palabra) {
+    @Then("el archivo Json NO debe contener la palabra {string}")
+    public void elArchivoJsonNoDebeContenerLaPalabra(String palabra) {
     System.out.println("\n===== VERIFICANDO QUE NO EXISTA LA PALABRA EXACTA =====");
     System.out.println("Palabra EXACTA que NO debe existir: '" + palabra + "'");
     System.out.println("Nota: Solo busca la palabra completa, no como parte de otras palabras");

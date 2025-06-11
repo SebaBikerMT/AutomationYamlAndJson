@@ -1,6 +1,6 @@
 # language: es
 
-Característica: Validación de archivo YAML de valores para Kubernetes
+Característica: Validación de configuración de archivo yaml en ambiente de 
   Como desarrollador
   Quiero validar que el archivo qa-values-gke.yaml tiene la configuración correcta
   Para evitar errores en el despliegue en producción
