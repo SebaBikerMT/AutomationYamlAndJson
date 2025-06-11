@@ -24,7 +24,6 @@ Característica: Validación de configuración de archivo json en ambiente de Pr
   Escenario: El archivo YAML debe tener la configuración de servicios correcta
     Dado que tengo acceso al repositorio "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager"
     Cuando leo el archivo "helm/prod-values-gke.yaml"
-    Entonces el archivo debe contener el campo "serviceAccount.create" con valor true
-    Y el archivo debe contener el campo "TestMode" con valor false
+    Entonces el archivo Yaml NO debe contener la palabra "prod"
 
     

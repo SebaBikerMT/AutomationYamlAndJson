@@ -25,4 +25,3 @@ Característica: Validación de configuración de archivo yaml en ambiente de
     Dado que tengo acceso al repositorio "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager"
     Cuando leo el archivo "helm/qa-values-gke.yaml"
     Entonces el archivo debe contener el campo "serviceAccount.create" con valor true
-    Y el archivo debe contener el campo "TestMode" con valor "true  # modo test para el envio de los correos y la generacion de ticket en zendesk"

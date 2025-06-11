@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.confuturo.runners.CucumberRunner" time="24.986" tests="13" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.confuturo.runners.CucumberRunner" time="23.252" tests="13" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CL"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\spena\AppData\Local\Temp\surefire13324019871047188335\surefirebooter-20250611142125843_3.jar C:\Users\spena\AppData\Local\Temp\surefire13324019871047188335 2025-06-11T14-21-25_545-jvmRun1 surefire-20250611142125843_1tmp surefire_0-20250611142125843_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\spena\AppData\Local\Temp\surefire2199219738200569610\surefirebooter-20250611151503475_3.jar C:\Users\spena\AppData\Local\Temp\surefire2199219738200569610 2025-06-11T15-15-03_146-jvmRun1 surefire-20250611151503475_1tmp surefire_0-20250611151503475_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\target\test-classes;C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\target\classes;C:\Users\spena\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\spena\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\spena\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\spena\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\spena\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\spena\.m2\repository\io\github\cdimascio\dotenv-java\2.3.2\dotenv-java-2.3.2.jar;C:\Users\spena\.m2\repository\org\json\json\20230618\json-20230618.jar;C:\Users\spena\.m2\repository\org\gitlab4j\gitlab4j-api\5.4.0\gitlab4j-api-5.4.0.jar;C:\Users\spena\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\2.39.1\jersey-hk2-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-common\2.39.1\jersey-common-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-locator\2.6.1\hk2-locator-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.6.1\aopalliance-repackaged-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-api\2.6.1\hk2-api-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-utils\2.6.1\hk2-utils-2.6.1.jar;C:\Users\spena\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-client\2.39.1\jersey-client-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\2.1.6\jakarta.ws.rs-api-2.1.6.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\jakarta.inject\2.6.1\jakarta.inject-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\connectors\jersey-apache-connector\2.39.1\jersey-apache-connector-2.39.1.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\spena\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\spena\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-multipart\2.39.1\jersey-media-multipart-2.39.1.jar;C:\Users\spena\.m2\repository\org\jvnet\mimepull\mimepull\1.9.15\mimepull-1.9.15.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-json-jackson\2.39.1\jersey-media-json-jackson-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\ext\jersey-entity-filtering\2.39.1\jersey-entity-filtering-2.39.1.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.14.1\jackson-module-jaxb-annotations-2.14.1.jar;C:\Users\spena\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\spena\.m2\repository\jakarta\servlet\jakarta.servlet-api\4.0.4\jakarta.servlet-api-4.0.4.jar;C:\Users\spena\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\spena\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\spena\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\spena\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\spena\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\spena\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\spena\AppData\Local\Temp\surefire13324019871047188335\surefirebooter-20250611142125843_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\spena\AppData\Local\Temp\surefire2199219738200569610\surefirebooter-20250611151503475_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.4+8-LTS-274"/>
@@ -58,9 +58,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="2.509">
+  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="2.266">
     <system-out><![CDATA[
 Escenario: Depuración del contenido JSON                                                                                     # src/test/resources/features/json-validation-development.feature:8
+
+===== INICIANDO ESCENARIO =====
+Nombre: Depuración del contenido JSON
 
 ===== INICIANDO ESCENARIO =====
 Nombre: Depuración del contenido JSON
@@ -259,11 +262,17 @@ JSON parseado correctamente utilizando Jackson
 
 ===== ESCENARIO EXITOSO =====
 Nombre: Depuración del contenido JSON
+
+===== ESCENARIO EXITOSO =====
+Nombre: Depuración del contenido JSON
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="2.085">
+  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="1.916">
     <system-out><![CDATA[
 Escenario: Verificar datos mas relevantes del archivo                                                                              # src/test/resources/features/json-validation-development.feature:13
+
+===== INICIANDO ESCENARIO =====
+Nombre: Verificar datos mas relevantes del archivo
 
 ===== INICIANDO ESCENARIO =====
 Nombre: Verificar datos mas relevantes del archivo
@@ -394,11 +403,17 @@ Valor actual: 'http://api-notificaciones.qa.seguros.local/notificaciones/'
 
 ===== ESCENARIO EXITOSO =====
 Nombre: Verificar datos mas relevantes del archivo
+
+===== ESCENARIO EXITOSO =====
+Nombre: Verificar datos mas relevantes del archivo
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="1.725">
+  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="2.156">
     <system-out><![CDATA[
 Escenario: Verificar que el documento no contiene enlaces a rutas equivocadas                                                # src/test/resources/features/json-validation-development.feature:22
+
+===== INICIANDO ESCENARIO =====
+Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 
 ===== INICIANDO ESCENARIO =====
 Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
@@ -521,11 +536,17 @@ Patrón de búsqueda (palabra exacta): \b\Qprod\E\b
 
 ===== ESCENARIO EXITOSO =====
 Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
+
+===== ESCENARIO EXITOSO =====
+Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 ]]></system-out>
   </testcase>
-  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="1.845">
+  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="1.491">
     <system-out><![CDATA[
 Escenario: Depuración del contenido JSON                                                                                     # src/test/resources/features/json-validation-prod.feature:8
+
+===== INICIANDO ESCENARIO =====
+Nombre: Depuración del contenido JSON
 
 ===== INICIANDO ESCENARIO =====
 Nombre: Depuración del contenido JSON
@@ -632,11 +653,17 @@ JSON parseado correctamente utilizando Jackson
 
 ===== ESCENARIO EXITOSO =====
 Nombre: Depuración del contenido JSON
+
+===== ESCENARIO EXITOSO =====
+Nombre: Depuración del contenido JSON
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="2.007">
+  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="1.425">
     <system-out><![CDATA[
 Escenario: Verificar datos mas relevantes del archivo                                                                        # src/test/resources/features/json-validation-prod.feature:13
+
+===== INICIANDO ESCENARIO =====
+Nombre: Verificar datos mas relevantes del archivo
 
 ===== INICIANDO ESCENARIO =====
 Nombre: Verificar datos mas relevantes del archivo
@@ -713,11 +740,17 @@ Valor actual: 'http://api.seguros.local/payment-service/'
 
 ===== ESCENARIO EXITOSO =====
 Nombre: Verificar datos mas relevantes del archivo
+
+===== ESCENARIO EXITOSO =====
+Nombre: Verificar datos mas relevantes del archivo
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="1.754">
+  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="1.99">
     <system-out><![CDATA[
 Escenario: Verificar que el documento no contiene enlaces a rutas equivocadas                                                # src/test/resources/features/json-validation-prod.feature:20
+
+===== INICIANDO ESCENARIO =====
+Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 
 ===== INICIANDO ESCENARIO =====
 Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
@@ -800,11 +833,17 @@ Patrón de búsqueda (palabra exacta): \b\Qdevelopment\E\b
 
 ===== ESCENARIO EXITOSO =====
 Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
+
+===== ESCENARIO EXITOSO =====
+Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 ]]></system-out>
   </testcase>
-  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de QA" time="1.486">
+  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de QA" time="1.45">
     <system-out><![CDATA[
 Escenario: Depuración del contenido JSON                                                                                     # src/test/resources/features/json-validation-qa.feature:8
+
+===== INICIANDO ESCENARIO =====
+Nombre: Depuración del contenido JSON
 
 ===== INICIANDO ESCENARIO =====
 Nombre: Depuración del contenido JSON
@@ -923,11 +962,17 @@ JSON parseado correctamente utilizando Jackson
 
 ===== ESCENARIO EXITOSO =====
 Nombre: Depuración del contenido JSON
+
+===== ESCENARIO EXITOSO =====
+Nombre: Depuración del contenido JSON
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de QA" time="1.708">
+  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de QA" time="1.453">
     <system-out><![CDATA[
 Escenario: Verificar datos mas relevantes del archivo                                                                        # src/test/resources/features/json-validation-qa.feature:13
+
+===== INICIANDO ESCENARIO =====
+Nombre: Verificar datos mas relevantes del archivo
 
 ===== INICIANDO ESCENARIO =====
 Nombre: Verificar datos mas relevantes del archivo
@@ -1018,11 +1063,17 @@ Valor actual: 'confuturo-sso-qa'
 
 ===== ESCENARIO EXITOSO =====
 Nombre: Verificar datos mas relevantes del archivo
+
+===== ESCENARIO EXITOSO =====
+Nombre: Verificar datos mas relevantes del archivo
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de QA" time="2.201">
+  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de QA" time="1.724">
     <system-out><![CDATA[
 Escenario: Verificar que el documento no contiene enlaces a rutas equivocadas                                                # src/test/resources/features/json-validation-qa.feature:23
+
+===== INICIANDO ESCENARIO =====
+Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 
 ===== INICIANDO ESCENARIO =====
 Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
@@ -1117,11 +1168,17 @@ Patrón de búsqueda (palabra exacta): \b\Qdevelopment\E\b
 
 ===== ESCENARIO EXITOSO =====
 Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
+
+===== ESCENARIO EXITOSO =====
+Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion" classname="Validación de configuración de archivo json en ambiente de Produccion #2" time="2.328">
+  <testcase name="El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion" classname="Validación de configuración de archivo json en ambiente de Produccion #2" time="1.762">
     <system-out><![CDATA[
 Escenario: El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion                                                         # src/test/resources/features/yaml-validation_prod.feature:8
+
+===== INICIANDO ESCENARIO =====
+Nombre: El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion
 
 ===== INICIANDO ESCENARIO =====
 Nombre: El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion
@@ -1137,35 +1194,123 @@ Conexión establecida correctamente al repositorio: confuturo_ti/portales-intern
 Intentando leer archivo: helm/prod-values-gke.yaml del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Proyecto encontrado con ID: 61972501
 Contenido YAML guardado en 'gitlab-yaml-content.txt'
-Archivo YAML leído y parseado correctamente
+=== CONTENIDO YAML ORIGINAL ===
+Longitud: 3616 caracteres
+Primeras 300 caracteres:
+replicaCount: 1
+
+image:
+  repository: confuturocloud/backend-transaction-manager
+  tag: "latest"
+
+imagePullSecrets: 
+  - name: confuturo-registry
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+configmap:
+  name: backend-transact
+=== FIN DEL CONTENIDO ORIGINAL ===
+=== PROCESO DE LIMPIEZA DE COMENTARIOS YAML ===
+Línea 27:
+  Original: [    Apis__Zendesk__Process: "25502377759892"             # Tramite]
+  Limpia:   [    Apis__Zendesk__Process: "25502377759892"]
+Línea 28:
+  Original: [    Apis__Zendesk__RemittanceNumber: "16156973947668"    # Numero remesable]
+  Limpia:   [    Apis__Zendesk__RemittanceNumber: "16156973947668"]
+Línea 29:
+  Original: [    Apis__Zendesk__Policy: "360044368191"                # Poliza]
+  Limpia:   [    Apis__Zendesk__Policy: "360044368191"]
+Línea 30:
+  Original: [    Apis__Zendesk__ProductFamily: "360044358291"         # Familia del producto]
+  Limpia:   [    Apis__Zendesk__ProductFamily: "360044358291"]
+Línea 31:
+  Original: [    Apis__Zendesk__AttentionType: "360045181951"         # Tipo de atencion]
+  Limpia:   [    Apis__Zendesk__AttentionType: "360045181951"]
+Línea 32:
+  Original: [    Apis__Zendesk__Attention: "17111562171028"           # Atencion]
+  Limpia:   [    Apis__Zendesk__Attention: "17111562171028"]
+Línea 33:
+  Original: [    Apis__Zendesk__AttentionChannel: "360044334951"    	 # canal de atencion]
+  Limpia:   [    Apis__Zendesk__AttentionChannel: "360044334951"]
+Línea 34:
+  Original: [    Apis__Zendesk__ProcessState: "32024592093844"        # Estado Trámite]
+  Limpia:   [    Apis__Zendesk__ProcessState: "32024592093844"]
+Línea 35:
+  Original: [    Apis__Zendesk__BranchOffice: "360044337571"          # sucursal]
+  Limpia:   [    Apis__Zendesk__BranchOffice: "360044337571"]
+Línea 36:
+  Original: [    Apis__Zendesk__BranchOfficeName: "360044337571"      # Nombre de la Sucursal]
+  Limpia:   [    Apis__Zendesk__BranchOfficeName: "360044337571"]
+Líneas originales: 102
+Líneas procesadas: 102
+Comentarios eliminados: 10
+=== FIN DEL PROCESO DE LIMPIEZA ===
+YAML limpio guardado en 'cleaned-yaml-content.txt'
+Longitud después de limpieza: 3361 caracteres
+YAML limpio parseado correctamente
   Cuando leo el archivo "helm/prod-values-gke.yaml"                                                                                                        # com.confuturo.steps.YamlValidationSteps.leoElArchivo(java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: ASPNETCORE_ENVIRONMENT
 Valor esperado: 'Production'
-Valor actual: 'Production'
+Valor del YAML parseado: 'Production'
+Valor final obtenido: 'Production'
+✓ Campo validado correctamente
   Entonces el archivo debe contener el campo "ASPNETCORE_ENVIRONMENT" con valor "Production"                                                               # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Client__Url
 Valor esperado: 'http://cliente-servicio-api.prod-servicios-globales.svc.cluster.local/clientes/'
-Valor actual: 'http://cliente-servicio-api.prod-servicios-globales.svc.cluster.local/clientes/'
+Valor del YAML parseado: 'http://cliente-servicio-api.prod-servicios-globales.svc.cluster.local/clientes/'
+Valor final obtenido: 'http://cliente-servicio-api.prod-servicios-globales.svc.cluster.local/clientes/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Client__Url" con valor "http://cliente-servicio-api.prod-servicios-globales.svc.cluster.local/clientes/"      # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Product__Url
 Valor esperado: 'http://productos-services.prod-servicios-globales.svc.cluster.local/productos/'
-Valor actual: 'http://productos-services.prod-servicios-globales.svc.cluster.local/productos/'
+Valor del YAML parseado: 'http://productos-services.prod-servicios-globales.svc.cluster.local/productos/'
+Valor final obtenido: 'http://productos-services.prod-servicios-globales.svc.cluster.local/productos/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Product__Url" con valor "http://productos-services.prod-servicios-globales.svc.cluster.local/productos/"      # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Payment__Url
 Valor esperado: 'http://payment-service-api.prod-payment-services.svc.cluster.local/payment-service/'
-Valor actual: 'http://payment-service-api.prod-payment-services.svc.cluster.local/payment-service/'
+Valor del YAML parseado: 'http://payment-service-api.prod-payment-services.svc.cluster.local/payment-service/'
+Valor final obtenido: 'http://payment-service-api.prod-payment-services.svc.cluster.local/payment-service/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Payment__Url" con valor "http://payment-service-api.prod-payment-services.svc.cluster.local/payment-service/" # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Zendesk__Url
 Valor esperado: 'https://atencionconfuturo.zendesk.com/'
-Valor actual: 'https://atencionconfuturo.zendesk.com/'
+Valor del YAML parseado: 'https://atencionconfuturo.zendesk.com/'
+Valor final obtenido: 'https://atencionconfuturo.zendesk.com/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Zendesk__Url" con valor "https://atencionconfuturo.zendesk.com/"                                              # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Pdf__Url 
 Valor esperado: 'http://pdf-service.prod-pdf-service.svc.cluster.local/pdf-service/'
-Valor actual: 'http://pdf-service.prod-pdf-service.svc.cluster.local/pdf-service/'
+Valor del YAML parseado: 'http://pdf-service.prod-pdf-service.svc.cluster.local/pdf-service/'
+Valor final obtenido: 'http://pdf-service.prod-pdf-service.svc.cluster.local/pdf-service/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Pdf__Url " con valor "http://pdf-service.prod-pdf-service.svc.cluster.local/pdf-service/"                     # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Kta__Url 
 Valor esperado: 'http://192.168.83.90/vwnetx_Confuturo_Zendesk/'
-Valor actual: 'http://192.168.83.90/vwnetx_Confuturo_Zendesk/'
+Valor del YAML parseado: 'http://192.168.83.90/vwnetx_Confuturo_Zendesk/'
+Valor final obtenido: 'http://192.168.83.90/vwnetx_Confuturo_Zendesk/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Kta__Url " con valor "http://192.168.83.90/vwnetx_Confuturo_Zendesk/"                                         # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
 
 ===== VERIFICACIÓN ESPECÍFICA DE Apis__Kta__User =====
@@ -1175,30 +1320,55 @@ Valor actual: 'admin'
 ¿Son iguales? true
 ¡Validación exitosa! Los valores son iguales
   Y el valor de Apis__Kta__User debe ser "admin"                                                                                                           # com.confuturo.steps.YamlValidationSteps.elValorDeApisKtaUserDebeSer(java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Notifications__Url
 Valor esperado: 'http://api-notificaciones.prod-notificaciones.svc.cluster.local/notificacion/'
-Valor actual: 'http://api-notificaciones.prod-notificaciones.svc.cluster.local/notificacion/'
+Valor del YAML parseado: 'http://api-notificaciones.prod-notificaciones.svc.cluster.local/notificacion/'
+Valor final obtenido: 'http://api-notificaciones.prod-notificaciones.svc.cluster.local/notificacion/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Notifications__Url" con valor "http://api-notificaciones.prod-notificaciones.svc.cluster.local/notificacion/" # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__HumanResources__Url
 Valor esperado: 'http://rrhh-service.prod-rrhh-service.svc.cluster.local/rrhh/'
-Valor actual: 'http://rrhh-service.prod-rrhh-service.svc.cluster.local/rrhh/'
+Valor del YAML parseado: 'http://rrhh-service.prod-rrhh-service.svc.cluster.local/rrhh/'
+Valor final obtenido: 'http://rrhh-service.prod-rrhh-service.svc.cluster.local/rrhh/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__HumanResources__Url" con valor "http://rrhh-service.prod-rrhh-service.svc.cluster.local/rrhh/"                # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: UrlVisualTime 
 Valor esperado: 'http://prodapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx'
-Valor actual: 'http://prodapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx'
+Valor del YAML parseado: 'http://prodapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx'
+Valor final obtenido: 'http://prodapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "UrlVisualTime " con valor "http://prodapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx"                     # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: vault.hashicorp.com/role
 Valor esperado: 'prod'
-Valor actual: 'prod'
+Valor del YAML parseado: 'prod'
+Valor final obtenido: 'prod'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "vault.hashicorp.com/role" con valor "prod"                                                                          # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion
 
 ===== ESCENARIO EXITOSO =====
 Nombre: El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de configuración de archivo json en ambiente de Produccion #2" time="1.61">
+  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de configuración de archivo json en ambiente de Produccion #2" time="1.804">
+    <failure message="Se encontraron 1 errores de validación. Consulta el detalle en los logs." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Se encontraron 1 errores de validación. Consulta el detalle en los logs.
+	at com.confuturo.steps.YamlValidationSteps.afterScenario(YamlValidationSteps.java:48)
+]]></failure>
     <system-out><![CDATA[
 Escenario: El archivo YAML debe tener la configuración de servicios correcta                                            # src/test/resources/features/yaml-validation_prod.feature:24
+
+===== INICIANDO ESCENARIO =====
+Nombre: El archivo YAML debe tener la configuración de servicios correcta
 
 ===== INICIANDO ESCENARIO =====
 Nombre: El archivo YAML debe tener la configuración de servicios correcta
@@ -1214,24 +1384,115 @@ Conexión establecida correctamente al repositorio: confuturo_ti/portales-intern
 Intentando leer archivo: helm/prod-values-gke.yaml del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Proyecto encontrado con ID: 61972501
 Contenido YAML guardado en 'gitlab-yaml-content.txt'
-Archivo YAML leído y parseado correctamente
-  Cuando leo el archivo "helm/prod-values-gke.yaml"                                                                     # com.confuturo.steps.YamlValidationSteps.leoElArchivo(java.lang.String)
-Campo: serviceAccount.create
-Valor esperado: true
-Valor actual: true
-  Entonces el archivo debe contener el campo "serviceAccount.create" con valor true                                     # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTrue(java.lang.String)
-Campo: TestMode
-Valor esperado: false
-Valor actual: false
-  Y el archivo debe contener el campo "TestMode" con valor false                                                        # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorFalse(java.lang.String)
+=== CONTENIDO YAML ORIGINAL ===
+Longitud: 3616 caracteres
+Primeras 300 caracteres:
+replicaCount: 1
 
-===== ESCENARIO EXITOSO =====
+image:
+  repository: confuturocloud/backend-transaction-manager
+  tag: "latest"
+
+imagePullSecrets: 
+  - name: confuturo-registry
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+configmap:
+  name: backend-transact
+=== FIN DEL CONTENIDO ORIGINAL ===
+=== PROCESO DE LIMPIEZA DE COMENTARIOS YAML ===
+Línea 27:
+  Original: [    Apis__Zendesk__Process: "25502377759892"             # Tramite]
+  Limpia:   [    Apis__Zendesk__Process: "25502377759892"]
+Línea 28:
+  Original: [    Apis__Zendesk__RemittanceNumber: "16156973947668"    # Numero remesable]
+  Limpia:   [    Apis__Zendesk__RemittanceNumber: "16156973947668"]
+Línea 29:
+  Original: [    Apis__Zendesk__Policy: "360044368191"                # Poliza]
+  Limpia:   [    Apis__Zendesk__Policy: "360044368191"]
+Línea 30:
+  Original: [    Apis__Zendesk__ProductFamily: "360044358291"         # Familia del producto]
+  Limpia:   [    Apis__Zendesk__ProductFamily: "360044358291"]
+Línea 31:
+  Original: [    Apis__Zendesk__AttentionType: "360045181951"         # Tipo de atencion]
+  Limpia:   [    Apis__Zendesk__AttentionType: "360045181951"]
+Línea 32:
+  Original: [    Apis__Zendesk__Attention: "17111562171028"           # Atencion]
+  Limpia:   [    Apis__Zendesk__Attention: "17111562171028"]
+Línea 33:
+  Original: [    Apis__Zendesk__AttentionChannel: "360044334951"    	 # canal de atencion]
+  Limpia:   [    Apis__Zendesk__AttentionChannel: "360044334951"]
+Línea 34:
+  Original: [    Apis__Zendesk__ProcessState: "32024592093844"        # Estado Trámite]
+  Limpia:   [    Apis__Zendesk__ProcessState: "32024592093844"]
+Línea 35:
+  Original: [    Apis__Zendesk__BranchOffice: "360044337571"          # sucursal]
+  Limpia:   [    Apis__Zendesk__BranchOffice: "360044337571"]
+Línea 36:
+  Original: [    Apis__Zendesk__BranchOfficeName: "360044337571"      # Nombre de la Sucursal]
+  Limpia:   [    Apis__Zendesk__BranchOfficeName: "360044337571"]
+Líneas originales: 102
+Líneas procesadas: 102
+Comentarios eliminados: 10
+=== FIN DEL PROCESO DE LIMPIEZA ===
+YAML limpio guardado en 'cleaned-yaml-content.txt'
+Longitud después de limpieza: 3361 caracteres
+YAML limpio parseado correctamente
+  Cuando leo el archivo "helm/prod-values-gke.yaml"                                                                     # com.confuturo.steps.YamlValidationSteps.leoElArchivo(java.lang.String)
+
+===== VERIFICANDO QUE NO EXISTA LA PALABRA EXACTA =====
+Palabra EXACTA que NO debe existir: 'prod'
+Nota: Búsqueda realizada en contenido SIN comentarios
+Longitud del contenido a buscar: 3361
+Usando contenido: LIMPIO (sin comentarios)
+¿Contiene 'prod' con búsqueda simple? true
+Ejemplos de dónde aparece (máximo 3):
+  1: ...
+    ASPNETCORE_ENVIRONMENT: "Production"
+    Apis__Client__Url...
+  2: ...: http://cliente-servicio-api.prod-servicios-globales.svc.cluste...
+  3: ...er.local/clientes/
+    Apis__Product__Url: http://productos-ser...
+Aplicando 5 patrones de búsqueda...
+Patrón 1 (:\s*["']?\Qprod\E["']?\s*(?=\s|$)): 1 coincidencias
+Patrón 2 (\.\Qprod\E[-\.]): 6 coincidencias
+Patrón 4 ((?<=[:/])\Qprod\E(?=\w)): 3 coincidencias
+¿Palabra EXACTA encontrada? true
+Total de contextos únicos: 10
+  Entonces el archivo Yaml NO debe contener la palabra "prod"                                                           # com.confuturo.steps.YamlValidationSteps.elArchivoYamlNoDebeContenerLaPalabra(java.lang.String)
+
+===== ERRORES DE VALIDACIÓN ENCONTRADOS =====
+
+    Error de validación: La palabra EXACTA 'prod' fue encontrada en el archivo pero NO debería estar presente. Total ocurrencias: 10. Contexto(s): Patrón 1: ...}} vault.hashicorp.com/role: "prod" service: type: ClusterIP ... | Patrón 2: ...l: http://cliente-servicio-api.prod-servicios-globales.svc.cluster... | Patrón 2: ...Url: http://productos-services.prod-servicios-globales.svc.cluster... | Patrón 2: ...rl: http://payment-service-api.prod-payment-services.svc.cluster.l... | Patrón 2: ..._Pdf__Url : http://pdf-service.prod-pdf-service.svc.cluster.local/... | Patrón 2: ...Url: http://api-notificaciones.prod-notificaciones.svc.cluster.loc... | Patrón 2: ...rces__Url: http://rrhh-service.prod-rrhh-service.svc.cluster.local... | Patrón 4: ... Apis__Product__Url: http://productos-services.prod-servicios-... | Patrón 4: ...os-globales.svc.cluster.local/productos/ Apis__Payment__Url... | Patrón 4: .../ UrlVisualTime : http://prodapps292.seguros.local/vtimenet...
+
+
+    Embedding Error de validación [text/plain 957 bytes]
+
+      java.lang.AssertionError: Se encontraron 1 errores de validación. Consulta el detalle en los logs.
+	at com.confuturo.steps.YamlValidationSteps.afterScenario(YamlValidationSteps.java:48)
+
+
+===== ESCENARIO FALLIDO =====
 Nombre: El archivo YAML debe tener la configuración de servicios correcta
+Error: d88a92af-8fe3-40ab-bde5-6592909ae8aa
 ]]></system-out>
+    <system-err><![CDATA[¡ERROR DE VALIDACIÓN! La palabra EXACTA 'prod' fue encontrada en el archivo pero NO debería estar presente. Total ocurrencias: 10. Contexto(s): Patrón 1: ...}} vault.hashicorp.com/role: "prod" service: type: ClusterIP ... | Patrón 2: ...l: http://cliente-servicio-api.prod-servicios-globales.svc.cluster... | Patrón 2: ...Url: http://productos-services.prod-servicios-globales.svc.cluster... | Patrón 2: ...rl: http://payment-service-api.prod-payment-services.svc.cluster.l... | Patrón 2: ..._Pdf__Url : http://pdf-service.prod-pdf-service.svc.cluster.local/... | Patrón 2: ...Url: http://api-notificaciones.prod-notificaciones.svc.cluster.loc... | Patrón 2: ...rces__Url: http://rrhh-service.prod-rrhh-service.svc.cluster.local... | Patrón 4: ... Apis__Product__Url: http://productos-services.prod-servicios-... | Patrón 4: ...os-globales.svc.cluster.local/productos/ Apis__Payment__Url... | Patrón 4: .../ UrlVisualTime : http://prodapps292.seguros.local/vtimenet...
+- La palabra EXACTA 'prod' fue encontrada en el archivo pero NO debería estar presente. Total ocurrencias: 10. Contexto(s): Patrón 1: ...}} vault.hashicorp.com/role: "prod" service: type: ClusterIP ... | Patrón 2: ...l: http://cliente-servicio-api.prod-servicios-globales.svc.cluster... | Patrón 2: ...Url: http://productos-services.prod-servicios-globales.svc.cluster... | Patrón 2: ...rl: http://payment-service-api.prod-payment-services.svc.cluster.l... | Patrón 2: ..._Pdf__Url : http://pdf-service.prod-pdf-service.svc.cluster.local/... | Patrón 2: ...Url: http://api-notificaciones.prod-notificaciones.svc.cluster.loc... | Patrón 2: ...rces__Url: http://rrhh-service.prod-rrhh-service.svc.cluster.local... | Patrón 4: ... Apis__Product__Url: http://productos-services.prod-servicios-... | Patrón 4: ...os-globales.svc.cluster.local/productos/ Apis__Payment__Url... | Patrón 4: .../ UrlVisualTime : http://prodapps292.seguros.local/vtimenet...
+]]></system-err>
   </testcase>
-  <testcase name="El archivo YAML de QA debe tener solo valores que hagan referencia a QA" classname="Validación de configuración de archivo yaml en ambiente de" time="1.756">
+  <testcase name="El archivo YAML de QA debe tener solo valores que hagan referencia a QA" classname="Validación de configuración de archivo yaml en ambiente de" time="1.73">
     <system-out><![CDATA[
 Escenario: El archivo YAML de QA debe tener solo valores que hagan referencia a QA                                                                         # src/test/resources/features/yaml-validation_qa.feature:8
+
+===== INICIANDO ESCENARIO =====
+Nombre: El archivo YAML de QA debe tener solo valores que hagan referencia a QA
 
 ===== INICIANDO ESCENARIO =====
 Nombre: El archivo YAML de QA debe tener solo valores que hagan referencia a QA
@@ -1247,35 +1508,123 @@ Conexión establecida correctamente al repositorio: confuturo_ti/portales-intern
 Intentando leer archivo: helm/qa-values-gke.yaml del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Proyecto encontrado con ID: 61972501
 Contenido YAML guardado en 'gitlab-yaml-content.txt'
-Archivo YAML leído y parseado correctamente
+=== CONTENIDO YAML ORIGINAL ===
+Longitud: 3983 caracteres
+Primeras 300 caracteres:
+replicaCount: 1
+
+image:
+  repository: confuturocloud/backend-transaction-manager
+  tag: "latest"
+
+imagePullSecrets: 
+  - name: confuturo-registry
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+configmap:
+  name: backend-transact
+=== FIN DEL CONTENIDO ORIGINAL ===
+=== PROCESO DE LIMPIEZA DE COMENTARIOS YAML ===
+Línea 28:
+  Original: [    Apis__Zendesk__Process: "33125056531988"             # Tramite]
+  Limpia:   [    Apis__Zendesk__Process: "33125056531988"]
+Línea 29:
+  Original: [    Apis__Zendesk__RemittanceNumber: "20303714924948"    # Numero remesable]
+  Limpia:   [    Apis__Zendesk__RemittanceNumber: "20303714924948"]
+Línea 30:
+  Original: [    Apis__Zendesk__Policy: "20303361492884"              # Poliza]
+  Limpia:   [    Apis__Zendesk__Policy: "20303361492884"]
+Línea 31:
+  Original: [    Apis__Zendesk__ProductFamily: "20303373617044"       # Familia del producto]
+  Limpia:   [    Apis__Zendesk__ProductFamily: "20303373617044"]
+Línea 32:
+  Original: [    Apis__Zendesk__AttentionType: "20303563434644"       # Tipo de atencion]
+  Limpia:   [    Apis__Zendesk__AttentionType: "20303563434644"]
+Línea 33:
+  Original: [    Apis__Zendesk__Attention: "20303615732628"           # Atencion]
+  Limpia:   [    Apis__Zendesk__Attention: "20303615732628"]
+Línea 34:
+  Original: [    Apis__Zendesk__AttentionChannel: "20303791201044"    # canal de atencion]
+  Limpia:   [    Apis__Zendesk__AttentionChannel: "20303791201044"]
+Línea 35:
+  Original: [    Apis__Zendesk__ProcessState: "33125265115284"        # Estado Trámite]
+  Limpia:   [    Apis__Zendesk__ProcessState: "33125265115284"]
+Línea 36:
+  Original: [    Apis__Zendesk__BranchOffice: "20303809226388"        # sucursal]
+  Limpia:   [    Apis__Zendesk__BranchOffice: "20303809226388"]
+Línea 37:
+  Original: [    Apis__Zendesk__BranchOfficeName: "360044337571"      # Nombre de la Sucursal]
+  Limpia:   [    Apis__Zendesk__BranchOfficeName: "360044337571"]
+Líneas originales: 107
+Líneas procesadas: 107
+Comentarios eliminados: 11
+=== FIN DEL PROCESO DE LIMPIEZA ===
+YAML limpio guardado en 'cleaned-yaml-content.txt'
+Longitud después de limpieza: 3658 caracteres
+YAML limpio parseado correctamente
   Cuando leo el archivo "helm/qa-values-gke.yaml"                                                                                                          # com.confuturo.steps.YamlValidationSteps.leoElArchivo(java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: ASPNETCORE_ENVIRONMENT
 Valor esperado: 'QA'
-Valor actual: 'QA'
+Valor del YAML parseado: 'QA'
+Valor final obtenido: 'QA'
+✓ Campo validado correctamente
   Entonces el archivo debe contener el campo "ASPNETCORE_ENVIRONMENT" con valor "QA"                                                                       # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Client__Url
 Valor esperado: 'http://cliente-servicio-api.qa-clientes.svc.cluster.local/clientes/'
-Valor actual: 'http://cliente-servicio-api.qa-clientes.svc.cluster.local/clientes/'
+Valor del YAML parseado: 'http://cliente-servicio-api.qa-clientes.svc.cluster.local/clientes/'
+Valor final obtenido: 'http://cliente-servicio-api.qa-clientes.svc.cluster.local/clientes/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Client__Url" con valor "http://cliente-servicio-api.qa-clientes.svc.cluster.local/clientes/"                  # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Product__Url
 Valor esperado: 'http://productos-services.qa-servicios-globales.svc.cluster.local/productos/'
-Valor actual: 'http://productos-services.qa-servicios-globales.svc.cluster.local/productos/'
+Valor del YAML parseado: 'http://productos-services.qa-servicios-globales.svc.cluster.local/productos/'
+Valor final obtenido: 'http://productos-services.qa-servicios-globales.svc.cluster.local/productos/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Product__Url" con valor "http://productos-services.qa-servicios-globales.svc.cluster.local/productos/"        # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Payment__Url
 Valor esperado: 'http://payment-service-api.qa-payment-services.svc.cluster.local/payment-service/'
-Valor actual: 'http://payment-service-api.qa-payment-services.svc.cluster.local/payment-service/'
+Valor del YAML parseado: 'http://payment-service-api.qa-payment-services.svc.cluster.local/payment-service/'
+Valor final obtenido: 'http://payment-service-api.qa-payment-services.svc.cluster.local/payment-service/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Payment__Url" con valor "http://payment-service-api.qa-payment-services.svc.cluster.local/payment-service/"   # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Zendesk__Url
 Valor esperado: 'https://atencionconfuturo1616160263.zendesk.com/'
-Valor actual: 'https://atencionconfuturo1616160263.zendesk.com/'
+Valor del YAML parseado: 'https://atencionconfuturo1616160263.zendesk.com/'
+Valor final obtenido: 'https://atencionconfuturo1616160263.zendesk.com/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Zendesk__Url" con valor "https://atencionconfuturo1616160263.zendesk.com/"                                    # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Pdf__Url
 Valor esperado: 'http://pdf-service.qa-pdf-service.svc.cluster.local/pdf-service/'
-Valor actual: 'http://pdf-service.qa-pdf-service.svc.cluster.local/pdf-service/'
+Valor del YAML parseado: 'http://pdf-service.qa-pdf-service.svc.cluster.local/pdf-service/'
+Valor final obtenido: 'http://pdf-service.qa-pdf-service.svc.cluster.local/pdf-service/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Pdf__Url" con valor "http://pdf-service.qa-pdf-service.svc.cluster.local/pdf-service/"                        # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Kta__Url
 Valor esperado: 'http://192.168.68.19/vwnetx_confuturo_zendesk/'
-Valor actual: 'http://192.168.68.19/vwnetx_confuturo_zendesk/'
+Valor del YAML parseado: 'http://192.168.68.19/vwnetx_confuturo_zendesk/'
+Valor final obtenido: 'http://192.168.68.19/vwnetx_confuturo_zendesk/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Kta__Url" con valor "http://192.168.68.19/vwnetx_confuturo_zendesk/"                                          # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
 
 ===== VERIFICACIÓN ESPECÍFICA DE Apis__Kta__User =====
@@ -1285,30 +1634,52 @@ Valor actual: 'admin'
 ¿Son iguales? true
 ¡Validación exitosa! Los valores son iguales
   Y el valor de Apis__Kta__User debe ser "admin"                                                                                                           # com.confuturo.steps.YamlValidationSteps.elValorDeApisKtaUserDebeSer(java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__Notifications__Url
 Valor esperado: 'http://api-notificaciones.qa-notificaciones.svc.cluster.local/notificaciones/'
-Valor actual: 'http://api-notificaciones.qa-notificaciones.svc.cluster.local/notificaciones/'
+Valor del YAML parseado: 'http://api-notificaciones.qa-notificaciones.svc.cluster.local/notificaciones/'
+Valor final obtenido: 'http://api-notificaciones.qa-notificaciones.svc.cluster.local/notificaciones/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__Notifications__Url" con valor "http://api-notificaciones.qa-notificaciones.svc.cluster.local/notificaciones/" # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: Apis__HumanResources__Url
 Valor esperado: 'http://rrhh-service.qa-rrhh-service.svc.cluster.local/rrhh/'
-Valor actual: 'http://rrhh-service.qa-rrhh-service.svc.cluster.local/rrhh/'
+Valor del YAML parseado: 'http://rrhh-service.qa-rrhh-service.svc.cluster.local/rrhh/'
+Valor final obtenido: 'http://rrhh-service.qa-rrhh-service.svc.cluster.local/rrhh/'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "Apis__HumanResources__Url" con valor "http://rrhh-service.qa-rrhh-service.svc.cluster.local/rrhh/"                  # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: UrlVisualTime
 Valor esperado: 'http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx'
-Valor actual: 'http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx'
+Valor del YAML parseado: 'http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx'
+Valor final obtenido: 'http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "UrlVisualTime" con valor "http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx"                      # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== VERIFICANDO CAMPO CON VALOR TEXTO =====
 Campo: vault.hashicorp.com/role
 Valor esperado: 'qa'
-Valor actual: 'qa'
+Valor del YAML parseado: 'qa'
+Valor final obtenido: 'qa'
+✓ Campo validado correctamente
   Y el archivo debe contener el campo "vault.hashicorp.com/role" con valor "qa"                                                                            # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: El archivo YAML de QA debe tener solo valores que hagan referencia a QA
 
 ===== ESCENARIO EXITOSO =====
 Nombre: El archivo YAML de QA debe tener solo valores que hagan referencia a QA
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de configuración de archivo yaml en ambiente de" time="1.343">
+  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de configuración de archivo yaml en ambiente de" time="1.466">
     <system-out><![CDATA[
-Escenario: El archivo YAML debe tener la configuración de servicios correcta                                                                     # src/test/resources/features/yaml-validation_qa.feature:24
+Escenario: El archivo YAML debe tener la configuración de servicios correcta                                            # src/test/resources/features/yaml-validation_qa.feature:24
+
+===== INICIANDO ESCENARIO =====
+Nombre: El archivo YAML debe tener la configuración de servicios correcta
 
 ===== INICIANDO ESCENARIO =====
 Nombre: El archivo YAML debe tener la configuración de servicios correcta
@@ -1320,20 +1691,79 @@ Archivo .env encontrado en: C:\Users\spena\Desktop\AutomationYamlAndJson\Automat
 Token encontrado en archivo .env: ../.env
 Conexión a GitLab establecida correctamente
 Conexión establecida correctamente al repositorio: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
-  Dado que tengo acceso al repositorio "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager"                          # com.confuturo.steps.YamlValidationSteps.queAccesoAlRepositorio(java.lang.String)
+  Dado que tengo acceso al repositorio "confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager" # com.confuturo.steps.YamlValidationSteps.queAccesoAlRepositorio(java.lang.String)
 Intentando leer archivo: helm/qa-values-gke.yaml del proyecto: confuturo_ti/portales-internos/transaction-manager/backend-transaction-manager
 Proyecto encontrado con ID: 61972501
 Contenido YAML guardado en 'gitlab-yaml-content.txt'
-Archivo YAML leído y parseado correctamente
-  Cuando leo el archivo "helm/qa-values-gke.yaml"                                                                                                # com.confuturo.steps.YamlValidationSteps.leoElArchivo(java.lang.String)
+=== CONTENIDO YAML ORIGINAL ===
+Longitud: 3983 caracteres
+Primeras 300 caracteres:
+replicaCount: 1
+
+image:
+  repository: confuturocloud/backend-transaction-manager
+  tag: "latest"
+
+imagePullSecrets: 
+  - name: confuturo-registry
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+configmap:
+  name: backend-transact
+=== FIN DEL CONTENIDO ORIGINAL ===
+=== PROCESO DE LIMPIEZA DE COMENTARIOS YAML ===
+Línea 28:
+  Original: [    Apis__Zendesk__Process: "33125056531988"             # Tramite]
+  Limpia:   [    Apis__Zendesk__Process: "33125056531988"]
+Línea 29:
+  Original: [    Apis__Zendesk__RemittanceNumber: "20303714924948"    # Numero remesable]
+  Limpia:   [    Apis__Zendesk__RemittanceNumber: "20303714924948"]
+Línea 30:
+  Original: [    Apis__Zendesk__Policy: "20303361492884"              # Poliza]
+  Limpia:   [    Apis__Zendesk__Policy: "20303361492884"]
+Línea 31:
+  Original: [    Apis__Zendesk__ProductFamily: "20303373617044"       # Familia del producto]
+  Limpia:   [    Apis__Zendesk__ProductFamily: "20303373617044"]
+Línea 32:
+  Original: [    Apis__Zendesk__AttentionType: "20303563434644"       # Tipo de atencion]
+  Limpia:   [    Apis__Zendesk__AttentionType: "20303563434644"]
+Línea 33:
+  Original: [    Apis__Zendesk__Attention: "20303615732628"           # Atencion]
+  Limpia:   [    Apis__Zendesk__Attention: "20303615732628"]
+Línea 34:
+  Original: [    Apis__Zendesk__AttentionChannel: "20303791201044"    # canal de atencion]
+  Limpia:   [    Apis__Zendesk__AttentionChannel: "20303791201044"]
+Línea 35:
+  Original: [    Apis__Zendesk__ProcessState: "33125265115284"        # Estado Trámite]
+  Limpia:   [    Apis__Zendesk__ProcessState: "33125265115284"]
+Línea 36:
+  Original: [    Apis__Zendesk__BranchOffice: "20303809226388"        # sucursal]
+  Limpia:   [    Apis__Zendesk__BranchOffice: "20303809226388"]
+Línea 37:
+  Original: [    Apis__Zendesk__BranchOfficeName: "360044337571"      # Nombre de la Sucursal]
+  Limpia:   [    Apis__Zendesk__BranchOfficeName: "360044337571"]
+Líneas originales: 107
+Líneas procesadas: 107
+Comentarios eliminados: 11
+=== FIN DEL PROCESO DE LIMPIEZA ===
+YAML limpio guardado en 'cleaned-yaml-content.txt'
+Longitud después de limpieza: 3658 caracteres
+YAML limpio parseado correctamente
+  Cuando leo el archivo "helm/qa-values-gke.yaml"                                                                       # com.confuturo.steps.YamlValidationSteps.leoElArchivo(java.lang.String)
 Campo: serviceAccount.create
 Valor esperado: true
 Valor actual: true
-  Entonces el archivo debe contener el campo "serviceAccount.create" con valor true                                                              # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTrue(java.lang.String)
-Campo: TestMode
-Valor esperado: 'true  # modo test para el envio de los correos y la generacion de ticket en zendesk'
-Valor actual: 'true  # modo test para el envio de los correos y la generacion de ticket en zendesk'
-  Y el archivo debe contener el campo "TestMode" con valor "true  # modo test para el envio de los correos y la generacion de ticket en zendesk" # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTexto(java.lang.String,java.lang.String)
+  Entonces el archivo debe contener el campo "serviceAccount.create" con valor true                                     # com.confuturo.steps.YamlValidationSteps.elArchivoDebeContenerCampoConValorTrue(java.lang.String)
+
+===== ESCENARIO EXITOSO =====
+Nombre: El archivo YAML debe tener la configuración de servicios correcta
 
 ===== ESCENARIO EXITOSO =====
 Nombre: El archivo YAML debe tener la configuración de servicios correcta

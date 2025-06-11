@@ -24,7 +24,8 @@ public class YamlValidationSteps {
     private String rawYamlContent;  // Contenido crudo del YAML
     private Map<String, Object> yamlContent;
     private List<String> validationErrors = new ArrayList<>(); // Lista para registrar errores
-    /* 
+    private String cleanedYamlContent; // Contenido YAML sin comentarios
+     
     @Before
     public void beforeScenario(io.cucumber.java.Scenario scenario) {
         System.out.println("\n===== INICIANDO ESCENARIO =====");
@@ -56,7 +57,7 @@ public class YamlValidationSteps {
             System.out.println("\n===== ESCENARIO EXITOSO =====");
             System.out.println("Nombre: " + scenario.getName());
         }
-    }*/
+    }
     
     // Método para probar la conexión con GitLab
     public boolean testGitLabConnection() {
@@ -144,51 +145,180 @@ public class YamlValidationSteps {
     
     @When("leo el archivo {string}")
     public void leoElArchivo(String filePath) throws GitLabApiException {
+    try {
+        System.out.println("Intentando leer archivo: " + filePath + " del proyecto: " + projectPath);
+        
+        // Obtener el proyecto primero
+        Project project = gitLabApi.getProjectApi().getProject(projectPath);
+        System.out.println("Proyecto encontrado con ID: " + project.getId());
+        
+        // Obtener el archivo
+        RepositoryFile file = gitLabApi.getRepositoryFileApi()
+                .getFile(project.getId(), filePath, "main");
+        
+        // Decodificar el contenido
+        rawYamlContent = new String(
+                java.util.Base64.getDecoder().decode(file.getContent()),
+                StandardCharsets.UTF_8);
+        
+        // Guardar una copia del archivo para verificación
         try {
-            System.out.println("Intentando leer archivo: " + filePath + " del proyecto: " + projectPath);
-            
-            // Obtener el proyecto primero
-            Project project = gitLabApi.getProjectApi().getProject(projectPath);
-            System.out.println("Proyecto encontrado con ID: " + project.getId());
-            
-            // Obtener el archivo
-            RepositoryFile file = gitLabApi.getRepositoryFileApi()
-                    .getFile(project.getId(), filePath, "main");
-            
-            // Decodificar el contenido
-            rawYamlContent = new String(
-                    java.util.Base64.getDecoder().decode(file.getContent()),
-                    StandardCharsets.UTF_8);
-            
-            // Guardar una copia del archivo para verificación
-            try {
-                java.io.FileWriter writer = new java.io.FileWriter("gitlab-yaml-content.txt");
-                writer.write(rawYamlContent);
-                writer.close();
-                System.out.println("Contenido YAML guardado en 'gitlab-yaml-content.txt'");
-            } catch (Exception e) {
-                System.err.println("Error al guardar contenido: " + e.getMessage());
-            }
-            
-            // IMPORTANTE: Reemplazar las tabulaciones por espacios antes de parsear
-            String yamlContentFixed = rawYamlContent.replace("\t", "    ");
-            
-            // Parsear el YAML
-            try {
-                Yaml yaml = new Yaml();
-                yamlContent = yaml.load(new ByteArrayInputStream(yamlContentFixed.getBytes()));
-                System.out.println("Archivo YAML leído y parseado correctamente");
-            } catch (Exception e) {
-                System.err.println("Error al parsear YAML, continuando con validaciones manuales: " + e.getMessage());
-                // Aunque falle el parseo, podemos continuar con validaciones basadas en el contenido crudo
-                yamlContent = new java.util.HashMap<>();
-            }
-            
+            java.io.FileWriter writer = new java.io.FileWriter("gitlab-yaml-content.txt");
+            writer.write(rawYamlContent);
+            writer.close();
+            System.out.println("Contenido YAML guardado en 'gitlab-yaml-content.txt'");
         } catch (Exception e) {
-            System.err.println("Error al leer archivo YAML: " + e.getMessage());
-            throw e;
+            System.err.println("Error al guardar contenido: " + e.getMessage());
         }
+        
+        // NUEVO: Usar el método mejorado para parsear YAML (similar al JSON)
+        parseYamlContent();
+        
+    } catch (Exception e) {
+        System.err.println("Error al leer archivo YAML: " + e.getMessage());
+        throw e;
     }
+}
+
+    private void parseYamlContent() {
+    try {
+        // Mostrar el contenido original para depuración
+        System.out.println("=== CONTENIDO YAML ORIGINAL ===");
+        System.out.println("Longitud: " + rawYamlContent.length() + " caracteres");
+        System.out.println("Primeras 300 caracteres:");
+        System.out.println(rawYamlContent.substring(0, Math.min(300, rawYamlContent.length())));
+        System.out.println("=== FIN DEL CONTENIDO ORIGINAL ===");
+        
+        // Limpiar comentarios usando el método especializado
+        cleanedYamlContent = removeYamlComments(rawYamlContent);
+        
+        // Guardar el YAML limpio para inspección
+        try {
+            java.io.FileWriter writer = new java.io.FileWriter("cleaned-yaml-content.txt");
+            writer.write(cleanedYamlContent);
+            writer.close();
+            System.out.println("YAML limpio guardado en 'cleaned-yaml-content.txt'");
+            System.out.println("Longitud después de limpieza: " + cleanedYamlContent.length() + " caracteres");
+        } catch (Exception e) {
+            System.err.println("Error al guardar YAML limpio: " + e.getMessage());
+        }
+        
+        // IMPORTANTE: Reemplazar las tabulaciones por espacios antes de parsear
+        String yamlContentFixed = cleanedYamlContent.replace("\t", "    ");
+        
+        // Parsear el YAML limpio
+        try {
+            Yaml yaml = new Yaml();
+            yamlContent = yaml.load(new ByteArrayInputStream(yamlContentFixed.getBytes()));
+            System.out.println("YAML limpio parseado correctamente");
+        } catch (Exception e) {
+            System.err.println("Error al parsear YAML limpio, continuando con validaciones manuales: " + e.getMessage());
+            // Aunque falle el parseo, podemos continuar con validaciones basadas en el contenido limpio
+            yamlContent = new java.util.HashMap<>();
+        }
+        
+    } catch (Exception e) {
+        System.err.println("Error general al parsear YAML: " + e.getMessage());
+        e.printStackTrace();
+        yamlContent = new java.util.HashMap<>(); // Inicializar vacío para evitar NullPointerException
+        cleanedYamlContent = rawYamlContent; // Si falla la limpieza, usar el original
+    }
+}
+
+// NUEVO MÉTODO: Limpiar comentarios de YAML (equivalente al removeComments de JSON)
+private String removeYamlComments(String yaml) {
+    StringBuilder result = new StringBuilder();
+    String[] lines = yaml.split("\n");
+    
+    System.out.println("=== PROCESO DE LIMPIEZA DE COMENTARIOS YAML ===");
+    int lineasOriginales = lines.length;
+    int lineasProcesadas = 0;
+    int comentariosEliminados = 0;
+    
+    for (String line : lines) {
+        String originalLine = line;
+        String processedLine = line;
+        
+        // Buscar # pero excluir casos especiales donde # no es un comentario
+        int commentIndex = findYamlCommentStart(processedLine);
+        
+        // Si encontramos un comentario real, eliminar desde ahí
+        if (commentIndex >= 0) {
+            String beforeComment = processedLine.substring(0, commentIndex);
+            // IMPORTANTE: Preservar la indentación original pero quitar el comentario
+            processedLine = beforeComment.replaceAll("\\s+$", ""); // Quitar espacios al final
+            comentariosEliminados++;
+            
+            // Debug: mostrar las primeras 10 líneas procesadas
+            if (comentariosEliminados <= 10) {
+                System.out.println("Línea " + (lineasProcesadas + 1) + ":");
+                System.out.println("  Original: [" + originalLine + "]");
+                System.out.println("  Limpia:   [" + processedLine + "]");
+            }
+        }
+        
+        // CAMBIO CRÍTICO: Agregar TODAS las líneas, incluso las vacías, para preservar estructura YAML
+        result.append(processedLine).append("\n");
+        
+        lineasProcesadas++;
+    }
+    
+    System.out.println("Líneas originales: " + lineasOriginales);
+    System.out.println("Líneas procesadas: " + lineasProcesadas);
+    System.out.println("Comentarios eliminados: " + comentariosEliminados);
+    System.out.println("=== FIN DEL PROCESO DE LIMPIEZA ===");
+    
+    return result.toString();
+}
+
+// MÉTODO AUXILIAR: Encontrar el inicio de comentarios # en YAML
+private int findYamlCommentStart(String line) {
+    boolean inDoubleQuotes = false;
+    boolean inSingleQuotes = false;
+    char prevChar = ' ';
+    
+    for (int i = 0; i < line.length(); i++) {
+        char currentChar = line.charAt(i);
+        
+        // Manejar comillas dobles (pero solo si no están escapadas)
+        if (currentChar == '"' && prevChar != '\\') {
+            inDoubleQuotes = !inDoubleQuotes;
+        }
+        // Manejar comillas simples (pero solo si no están escapadas)
+        else if (currentChar == '\'' && prevChar != '\\') {
+            inSingleQuotes = !inSingleQuotes;
+        }
+        // Si encontramos # y no estamos dentro de comillas, es un comentario
+        else if (currentChar == '#' && !inDoubleQuotes && !inSingleQuotes) {
+            // Verificación adicional: asegurarse de que no sea parte de una URL
+            // Buscar hacia atrás para ver si hay "://" cerca
+            boolean isPartOfUrl = false;
+            if (i >= 2) {
+                String before = line.substring(Math.max(0, i-10), i);
+                if (before.contains("://") || before.contains("http") || before.contains("https")) {
+                    // Podría ser parte de una URL, verificar más cuidadosamente
+                    String urlPattern = "https?://[^\\s#]*";
+                    java.util.regex.Pattern pattern = java.util.regex.Pattern.compile(urlPattern);
+                    java.util.regex.Matcher matcher = pattern.matcher(line);
+                    while (matcher.find()) {
+                        if (i >= matcher.start() && i < matcher.end()) {
+                            isPartOfUrl = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            if (!isPartOfUrl) {
+                return i;
+            }
+        }
+        
+        prevChar = currentChar;
+    }
+    
+    return -1; // No se encontró comentario
+}
     
     @Then("el archivo debe contener el campo {string} con valor {int}")
     public void elArchivoDebeContenerCampoConValorEntero(String fieldPath, int expectedValue) {
@@ -206,19 +336,147 @@ public class YamlValidationSteps {
     }
     
     @Then("el archivo debe contener el campo {string} con valor {string}")
-    public void elArchivoDebeContenerCampoConValorTexto(String fieldPath, String expectedValue) {
-        Object actualValue = getNestedField(fieldPath);
-        System.out.println("Campo: " + fieldPath);
-        System.out.println("Valor esperado: '" + expectedValue + "'");
-        System.out.println("Valor actual: '" + actualValue + "'");
+public void elArchivoDebeContenerCampoConValorTexto(String fieldPath, String expectedValue) {
+    System.out.println("\n===== VERIFICANDO CAMPO CON VALOR TEXTO =====");
+    System.out.println("Campo: " + fieldPath);
+    System.out.println("Valor esperado: '" + expectedValue + "'");
+    
+    // Primero intentar obtener del YAML parseado
+    Object actualValue = getNestedField(fieldPath);
+    System.out.println("Valor del YAML parseado: '" + actualValue + "'");
+    
+    // Si no se pudo obtener del parseado, buscar en el contenido limpio directamente
+    if (actualValue == null && cleanedYamlContent != null) {
+        System.out.println("Buscando directamente en el contenido limpio...");
         
-        // Verificación sin lanzar excepción
-        if (!expectedValue.equals(String.valueOf(actualValue))) {
-            String errorMsg = "El campo " + fieldPath + " tiene valor '" + actualValue + "' pero debería ser '" + expectedValue + "'";
-            System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
-            validationErrors.add(errorMsg); // Registrar el error
+        // Crear patrón para buscar el campo en YAML: "fieldPath: valor"
+        String patron = fieldPath + ":\\s*[\"']?([^\"'\\n]+)[\"']?";
+        java.util.regex.Pattern pattern = java.util.regex.Pattern.compile(patron);
+        java.util.regex.Matcher matcher = pattern.matcher(cleanedYamlContent);
+        
+        if (matcher.find()) {
+            actualValue = matcher.group(1).trim();
+            System.out.println("Valor encontrado con regex: '" + actualValue + "'");
         }
     }
+    
+    System.out.println("Valor final obtenido: '" + actualValue + "'");
+    
+    // Verificación sin lanzar excepción
+    if (actualValue == null || !expectedValue.equals(String.valueOf(actualValue))) {
+        String errorMsg = "El campo " + fieldPath + " tiene valor '" + actualValue + "' pero debería ser '" + expectedValue + "'";
+        System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+        validationErrors.add(errorMsg);
+    } else {
+        System.out.println("✓ Campo validado correctamente");
+    }
+}
+
+    @Then("el archivo Yaml NO debe contener la palabra {string}")
+public void elArchivoYamlNoDebeContenerLaPalabra(String palabra) {
+    System.out.println("\n===== VERIFICANDO QUE NO EXISTA LA PALABRA EXACTA =====");
+    System.out.println("Palabra EXACTA que NO debe existir: '" + palabra + "'");
+    System.out.println("Nota: Búsqueda realizada en contenido SIN comentarios");
+    
+    // CAMBIO: Usar cleanedYamlContent en lugar de rawYamlContent
+    String contenidoParaBuscar = (cleanedYamlContent != null && !cleanedYamlContent.isEmpty()) 
+        ? cleanedYamlContent 
+        : rawYamlContent;
+    
+    if (contenidoParaBuscar == null || contenidoParaBuscar.isEmpty()) {
+        String errorMsg = "El contenido del archivo está vacío o no se ha cargado";
+        System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+        validationErrors.add(errorMsg);
+        return;
+    }
+    
+    System.out.println("Longitud del contenido a buscar: " + contenidoParaBuscar.length());
+    System.out.println("Usando contenido: " + (contenidoParaBuscar == cleanedYamlContent ? "LIMPIO (sin comentarios)" : "ORIGINAL"));
+    
+    // VERIFICACIÓN SIMPLE PRIMERO para debug
+    boolean contieneSimple = contenidoParaBuscar.toLowerCase().contains(palabra.toLowerCase());
+    System.out.println("¿Contiene '" + palabra + "' con búsqueda simple? " + contieneSimple);
+    
+    if (contieneSimple) {
+        System.out.println("Ejemplos de dónde aparece (máximo 3):");
+        String contenidoLower = contenidoParaBuscar.toLowerCase();
+        String palabraLower = palabra.toLowerCase();
+        int index = contenidoLower.indexOf(palabraLower);
+        int contador = 0;
+        while (index >= 0 && contador < 3) {
+            int inicio = Math.max(0, index - 30);
+            int fin = Math.min(contenidoParaBuscar.length(), index + palabra.length() + 30);
+            String contexto = contenidoParaBuscar.substring(inicio, fin);
+            System.out.println("  " + (contador + 1) + ": ..." + contexto + "...");
+            index = contenidoLower.indexOf(palabraLower, index + 1);
+            contador++;
+        }
+    }
+    
+    // Usar el patrón mejorado que detecta 'prod' en URLs y valores
+    List<String> patronesYaml = java.util.Arrays.asList(
+        // 1. Valor después de dos puntos (key: valor)
+        ":\\s*[\"']?" + java.util.regex.Pattern.quote(palabra) + "[\"']?\\s*(?=\\s|$)",
+        // 2. En URLs como "api.prod-servicios" o "service.prod.domain"
+        "\\." + java.util.regex.Pattern.quote(palabra) + "[-\\.]",
+        // 3. Al inicio de subdominios como "prod-servicios"
+        "(?<=[:/])" + java.util.regex.Pattern.quote(palabra) + "[-\\.]",
+        // 4. En hostnames como "prodapps292"
+        "(?<=[:/])" + java.util.regex.Pattern.quote(palabra) + "(?=\\w)",
+        // 5. Como parte de path "/prod/" o "/prod-algo/"
+        "/" + java.util.regex.Pattern.quote(palabra) + "(?=[-/]|$)"
+    );
+    
+    boolean encontradaPalabraExacta = false;
+    List<String> ocurrenciasEncontradas = new ArrayList<>();
+    java.util.Set<String> contextosDuplicados = new java.util.HashSet<>();
+    
+    System.out.println("Aplicando " + patronesYaml.size() + " patrones de búsqueda...");
+    
+    for (int i = 0; i < patronesYaml.size(); i++) {
+        String patronYaml = patronesYaml.get(i);
+        java.util.regex.Pattern pattern = java.util.regex.Pattern.compile(patronYaml, java.util.regex.Pattern.CASE_INSENSITIVE);
+        java.util.regex.Matcher matcher = pattern.matcher(contenidoParaBuscar);
+        
+        int coincidenciasPatron = 0;
+        while (matcher.find()) {
+            encontradaPalabraExacta = true;
+            coincidenciasPatron++;
+            
+            int inicio = Math.max(0, matcher.start() - 30);
+            int fin = Math.min(contenidoParaBuscar.length(), matcher.end() + 30);
+            String contexto = contenidoParaBuscar.substring(inicio, fin).replaceAll("\\s+", " ");
+            
+            if (!contextosDuplicados.contains(contexto) && ocurrenciasEncontradas.size() < 10) {
+                contextosDuplicados.add(contexto);
+                ocurrenciasEncontradas.add("Patrón " + (i+1) + ": ..." + contexto + "...");
+            }
+        }
+        
+        if (coincidenciasPatron > 0) {
+            System.out.println("Patrón " + (i+1) + " (" + patronYaml + "): " + coincidenciasPatron + " coincidencias");
+        }
+    }
+    
+    System.out.println("¿Palabra EXACTA encontrada? " + encontradaPalabraExacta);
+    System.out.println("Total de contextos únicos: " + ocurrenciasEncontradas.size());
+    
+    if (encontradaPalabraExacta) {
+        String errorMsg = "La palabra EXACTA '" + palabra + "' fue encontrada en el archivo pero NO debería estar presente. " +
+                         "Total ocurrencias: " + ocurrenciasEncontradas.size() + ". " +
+                         "Contexto(s): " + String.join(" | ", ocurrenciasEncontradas);
+        System.err.println("¡ERROR DE VALIDACIÓN! " + errorMsg);
+        validationErrors.add(errorMsg);
+    } else {
+        System.out.println("✓ Correcto: La palabra EXACTA '" + palabra + "' NO fue encontrada como término independiente");
+        
+        if (contieneSimple) {
+            System.out.println("ℹ Nota: La secuencia '" + palabra + "' SÍ aparece en el archivo, pero NO como término independiente según los patrones definidos");
+        } else {
+            System.out.println("ℹ Confirmado: La secuencia '" + palabra + "' no aparece en absoluto en el archivo");
+        }
+    }
+}
     
     @Then("el archivo debe contener el campo {string} con valor true")
     public void elArchivoDebeContenerCampoConValorTrue(String fieldPath) {

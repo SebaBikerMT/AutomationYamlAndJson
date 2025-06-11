@@ -1,0 +1,107 @@
+replicaCount: 1
+
+image:
+  repository: confuturocloud/backend-transaction-manager
+  tag: "latest"
+
+imagePullSecrets: 
+  - name: confuturo-registry
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+configmap:
+  name: backend-transaction-manager
+  data:    
+    ASPNETCORE_ENVIRONMENT: "QA"
+    Apis__Client__Url: http://cliente-servicio-api.qa-clientes.svc.cluster.local/clientes/
+    Apis__Product__Url: http://productos-services.qa-servicios-globales.svc.cluster.local/productos/
+    Apis__Payment__Url: http://payment-service-api.qa-payment-services.svc.cluster.local/payment-service/
+    Apis__Zendesk__Url: https://atencionconfuturo1616160263.zendesk.com/
+    Apis__Zendesk__User: jvergarat@confuturo.cl
+    Apis__Zendesk__FormId: "20303878720020"
+    Apis__Zendesk__Process: "33125056531988"
+    Apis__Zendesk__RemittanceNumber: "20303714924948"
+    Apis__Zendesk__Policy: "20303361492884"
+    Apis__Zendesk__ProductFamily: "20303373617044"
+    Apis__Zendesk__AttentionType: "20303563434644"
+    Apis__Zendesk__Attention: "20303615732628"
+    Apis__Zendesk__AttentionChannel: "20303791201044"
+    Apis__Zendesk__ProcessState: "33125265115284"
+    Apis__Zendesk__BranchOffice: "20303809226388"
+    Apis__Zendesk__BranchOfficeName: "360044337571"
+
+
+
+
+    Apis__Pdf__Url: http://pdf-service.qa-pdf-service.svc.cluster.local/pdf-service/
+    Apis__Kta__Url: http://192.168.68.19/vwnetx_confuturo_zendesk/
+    Apis__Kta__User : admin
+    Apis__Notifications__Url: http://api-notificaciones.qa-notificaciones.svc.cluster.local/notificaciones/
+    Apis__HumanResources__Url: http://rrhh-service.qa-rrhh-service.svc.cluster.local/rrhh/
+    UrlVisualTime: http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx
+    currentPeriodTest: "202410"
+    TestMode: true
+    Emails: hcofre@confuturo.cl,mrojas@confuturo.cl,jovallea@confuturo.cl,jhernandezv@confuturo.cl,elarraing@confuturo.cl,psaavedrai@confuturo.cl,jbarrerape@ext.confuturo.cl,mjsolar@ext.confuturo.cl,pgutierrezsa@confuturo.cl
+    
+    Keycloak__Url: https://auth.confuturo.cl/auth
+    Keycloak__Realm: confuturo-sso-qa
+    Keycloak__User: backend-transaction-manager
+
+podAnnotations:
+  vault.hashicorp.com/agent-inject: "true"
+  vault.hashicorp.com/agent-init-first: "true"
+  vault.hashicorp.com/agent-requests-cpu: "50m"
+  vault.hashicorp.com/agent-inject-secret-data: backend-transaction-manager-kv/data/qa
+  vault.hashicorp.com/agent-inject-template-data: |
+    {{- with secret "backend-transaction-manager-kv/data/qa" -}}
+    export ConnectionStrings__PensionesDB="{{ .Data.data.connectionstrings_pensionesdb }}"
+    export ConnectionStrings__TransactionsDB="{{ .Data.data.connectionstrings_transactionsdb }}"
+    export ConnectionStrings__PensionesUserDB="{{ .Data.data.connectionstrings_pensionesuserdb }}"
+    export Apis__Zendesk__Pass="{{ .Data.data.apis_zendesk_pass }}"
+    export Apis__Kta__Pass="{{ .Data.data.apis_kta_pass }}"
+    {{- end -}}
+  vault.hashicorp.com/role: "qa"
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+ingress:
+  enabled: true
+  className: ""
+  annotations: {}
+  hosts:
+    - host: backend-transaction-manager.qa.seguros.local
+      paths:
+        - path: /
+          pathType: ImplementationSpecific   
+  tls: []
+
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "200m"
+  limits:
+    memory: "256Mi"
+
+virtualService:
+  enabled: true
+
+gateway:
+  enabled: true
+
+sidecarIstio:
+  enabled: true
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 70
