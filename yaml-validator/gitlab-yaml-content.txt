@@ -47,6 +47,7 @@ configmap:
     UrlVisualTime: http://testapps292.seguros.local/vtimenet/visualtime/bucvtpipe.aspx
     currentPeriodTest: "202410"
     TestMode: true  # modo test para el envio de los correos y la generacion de ticket en zendesk
+    SaveLogs: true 
     Emails: hcofre@confuturo.cl,mrojas@confuturo.cl,jovallea@confuturo.cl,jhernandezv@confuturo.cl,elarraing@confuturo.cl,psaavedrai@confuturo.cl,jbarrerape@ext.confuturo.cl,mjsolar@ext.confuturo.cl,pgutierrezsa@confuturo.cl
     
     Keycloak__Url: https://auth.confuturo.cl/auth

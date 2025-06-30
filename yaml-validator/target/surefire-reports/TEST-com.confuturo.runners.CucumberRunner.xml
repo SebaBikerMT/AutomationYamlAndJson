@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.confuturo.runners.CucumberRunner" time="24.784" tests="13" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.confuturo.runners.CucumberRunner" time="33.814" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CL"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\spena\AppData\Local\Temp\surefire1469059339003946394\surefirebooter-20250611161151842_3.jar C:\Users\spena\AppData\Local\Temp\surefire1469059339003946394 2025-06-11T16-11-51_548-jvmRun1 surefire-20250611161151842_1tmp surefire_0-20250611161151842_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\spena\AppData\Local\Temp\surefire16063575395394872693\surefirebooter-20250616103656444_3.jar C:\Users\spena\AppData\Local\Temp\surefire16063575395394872693 2025-06-16T10-36-56_031-jvmRun1 surefire-20250616103656444_1tmp surefire_0-20250616103656444_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\target\test-classes;C:\Users\spena\Desktop\AutomationYamlAndJson\AutomationYamlAndJson\yaml-validator\target\classes;C:\Users\spena\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\spena\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\spena\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\spena\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\spena\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\spena\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\spena\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\spena\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\spena\.m2\repository\io\github\cdimascio\dotenv-java\2.3.2\dotenv-java-2.3.2.jar;C:\Users\spena\.m2\repository\org\json\json\20230618\json-20230618.jar;C:\Users\spena\.m2\repository\org\gitlab4j\gitlab4j-api\5.4.0\gitlab4j-api-5.4.0.jar;C:\Users\spena\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\2.39.1\jersey-hk2-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-common\2.39.1\jersey-common-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-locator\2.6.1\hk2-locator-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.6.1\aopalliance-repackaged-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-api\2.6.1\hk2-api-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\hk2-utils\2.6.1\hk2-utils-2.6.1.jar;C:\Users\spena\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\core\jersey-client\2.39.1\jersey-client-2.39.1.jar;C:\Users\spena\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\2.1.6\jakarta.ws.rs-api-2.1.6.jar;C:\Users\spena\.m2\repository\org\glassfish\hk2\external\jakarta.inject\2.6.1\jakarta.inject-2.6.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\connectors\jersey-apache-connector\2.39.1\jersey-apache-connector-2.39.1.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\spena\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\spena\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\spena\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-multipart\2.39.1\jersey-media-multipart-2.39.1.jar;C:\Users\spena\.m2\repository\org\jvnet\mimepull\mimepull\1.9.15\mimepull-1.9.15.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\media\jersey-media-json-jackson\2.39.1\jersey-media-json-jackson-2.39.1.jar;C:\Users\spena\.m2\repository\org\glassfish\jersey\ext\jersey-entity-filtering\2.39.1\jersey-entity-filtering-2.39.1.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.14.1\jackson-module-jaxb-annotations-2.14.1.jar;C:\Users\spena\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\spena\.m2\repository\jakarta\servlet\jakarta.servlet-api\4.0.4\jakarta.servlet-api-4.0.4.jar;C:\Users\spena\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\spena\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\spena\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\spena\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\spena\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\spena\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\spena\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\spena\AppData\Local\Temp\surefire1469059339003946394\surefirebooter-20250611161151842_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\spena\AppData\Local\Temp\surefire16063575395394872693\surefirebooter-20250616103656444_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.4+8-LTS-274"/>
@@ -58,7 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="3.021">
+  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="3.44">
     <system-out><![CDATA[
 Escenario: Depuración del contenido JSON                                                                                     # src/test/resources/features/json-validation-development.feature:8
 
@@ -267,7 +267,7 @@ Nombre: Depuración del contenido JSON
 Nombre: Depuración del contenido JSON
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="1.823">
+  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="1.045">
     <system-out><![CDATA[
 Escenario: Verificar datos mas relevantes del archivo                                                                              # src/test/resources/features/json-validation-development.feature:13
 
@@ -408,7 +408,7 @@ Nombre: Verificar datos mas relevantes del archivo
 Nombre: Verificar datos mas relevantes del archivo
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="1.706">
+  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de Desarrollo" time="0.959">
     <system-out><![CDATA[
 Escenario: Verificar que el documento no contiene enlaces a rutas equivocadas                                                # src/test/resources/features/json-validation-development.feature:22
 
@@ -541,7 +541,7 @@ Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 ]]></system-out>
   </testcase>
-  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="1.574">
+  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="1.004">
     <system-out><![CDATA[
 Escenario: Depuración del contenido JSON                                                                                     # src/test/resources/features/json-validation-prod.feature:8
 
@@ -658,7 +658,7 @@ Nombre: Depuración del contenido JSON
 Nombre: Depuración del contenido JSON
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="1.739">
+  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="0.9">
     <system-out><![CDATA[
 Escenario: Verificar datos mas relevantes del archivo                                                                        # src/test/resources/features/json-validation-prod.feature:13
 
@@ -745,7 +745,7 @@ Nombre: Verificar datos mas relevantes del archivo
 Nombre: Verificar datos mas relevantes del archivo
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="1.768">
+  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de Produccion #1" time="1.118">
     <system-out><![CDATA[
 Escenario: Verificar que el documento no contiene enlaces a rutas equivocadas                                                # src/test/resources/features/json-validation-prod.feature:20
 
@@ -838,7 +838,7 @@ Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 ]]></system-out>
   </testcase>
-  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de QA" time="1.783">
+  <testcase name="Depuración del contenido JSON" classname="Validación de configuración de archivo json en ambiente de QA" time="1.011">
     <system-out><![CDATA[
 Escenario: Depuración del contenido JSON                                                                                     # src/test/resources/features/json-validation-qa.feature:8
 
@@ -967,7 +967,7 @@ Nombre: Depuración del contenido JSON
 Nombre: Depuración del contenido JSON
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de QA" time="1.841">
+  <testcase name="Verificar datos mas relevantes del archivo" classname="Validación de configuración de archivo json en ambiente de QA" time="0.886">
     <system-out><![CDATA[
 Escenario: Verificar datos mas relevantes del archivo                                                                        # src/test/resources/features/json-validation-qa.feature:13
 
@@ -1068,7 +1068,7 @@ Nombre: Verificar datos mas relevantes del archivo
 Nombre: Verificar datos mas relevantes del archivo
 ]]></system-out>
   </testcase>
-  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de QA" time="2.171">
+  <testcase name="Verificar que el documento no contiene enlaces a rutas equivocadas" classname="Validación de configuración de archivo json en ambiente de QA" time="1.109">
     <system-out><![CDATA[
 Escenario: Verificar que el documento no contiene enlaces a rutas equivocadas                                                # src/test/resources/features/json-validation-qa.feature:23
 
@@ -1173,7 +1173,7 @@ Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 Nombre: Verificar que el documento no contiene enlaces a rutas equivocadas
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion" classname="Validación de configuración de archivo json en ambiente de Produccion #2" time="1.763">
+  <testcase name="El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion" classname="Validación de configuración de archivo json en ambiente de Produccion #2" time="16.127">
     <system-out><![CDATA[
 Escenario: El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion                                                         # src/test/resources/features/yaml-validation_prod.feature:8
 
@@ -1360,10 +1360,7 @@ Nombre: El archivo YAML de produccion debe tener solo valores que hagan referenc
 Nombre: El archivo YAML de produccion debe tener solo valores que hagan referencia a produccion
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de configuración de archivo json en ambiente de Produccion #2" time="1.767">
-    <failure message="Se encontraron 1 errores de validación. Consulta el detalle en los logs." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Se encontraron 1 errores de validación. Consulta el detalle en los logs.
-	at com.confuturo.steps.YamlValidationSteps.afterScenario(YamlValidationSteps.java:48)
-]]></failure>
+  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de configuración de archivo json en ambiente de Produccion #2" time="0.935">
     <system-out><![CDATA[
 Escenario: El archivo YAML debe tener la configuración de servicios correcta                                            # src/test/resources/features/yaml-validation_prod.feature:24
 
@@ -1450,49 +1447,26 @@ YAML limpio parseado correctamente
 ============================================================
 🔍 VERIFICANDO QUE NO EXISTA LA PALABRA EXACTA
 ============================================================
-🎯 Palabra EXACTA que NO debe existir: 'prod'
+🎯 Palabra EXACTA que NO debe existir: 'qa'
 📝 Nota: Búsqueda realizada en contenido SIN comentarios
 Longitud del contenido a buscar: 3361
 Usando contenido: LIMPIO (sin comentarios)
-¿Contiene 'prod' con búsqueda simple? true
-Ejemplos de dónde aparece (máximo 3):
-  1: ...
-    ASPNETCORE_ENVIRONMENT: "Production"
-    Apis__Client__Url...
-  2: ...: http://cliente-servicio-api.prod-servicios-globales.svc.cluste...
-  3: ...er.local/clientes/
-    Apis__Product__Url: http://productos-ser...
+¿Contiene 'qa' con búsqueda simple? false
 Aplicando 9 patrones de búsqueda...
-Patrón 1 (:\s*["']?\Qprod\E["']?\s*(?=\s|$|#)): 1 coincidencias
-Patrón 2 (\.\Qprod\E(?=[-\.])): 6 coincidencias
-Patrón 3 ((?<=[:/\.])\Qprod\E(?=[-\.])): 6 coincidencias
-Patrón 4 ((?<=[:/\.])\Qprod\E(?=[0-9\-])): 6 coincidencias
-Patrón 8 (\b\QPROD\E\b): 9 coincidencias
-Patrón 9 (\b\Qprod\E\b(?![a-zA-Z])): 9 coincidencias
-¿Palabra EXACTA encontrada? true
-Total de contextos únicos: 10
-  Entonces el archivo Yaml NO debe contener la palabra "prod"                                                           # com.confuturo.steps.YamlValidationSteps.elArchivoYamlNoDebeContenerLaPalabra(java.lang.String)
+¿Palabra EXACTA encontrada? false
+Total de contextos únicos: 0
+✓ Correcto: La palabra EXACTA 'qa' NO fue encontrada como término independiente
+ℹ Confirmado: La secuencia 'qa' no aparece en absoluto en el archivo
+  Entonces el archivo Yaml NO debe contener la palabra "qa"                                                             # com.confuturo.steps.YamlValidationSteps.elArchivoYamlNoDebeContenerLaPalabra(java.lang.String)
 
-===== ERRORES DE VALIDACIÓN ENCONTRADOS =====
-
-    Error de validación: La palabra EXACTA 'prod' fue encontrada en el archivo pero NO debería estar presente. Total ocurrencias: 10. Contexto(s): Patrón 1: ...}} vault.hashicorp.com/role: "prod" service: type: ClusterIP ... | Patrón 2: ...l: http://cliente-servicio-api.prod-servicios-globales.svc.cluste... | Patrón 2: ...Url: http://productos-services.prod-servicios-globales.svc.cluste... | Patrón 2: ...rl: http://payment-service-api.prod-payment-services.svc.cluster.... | Patrón 2: ..._Pdf__Url : http://pdf-service.prod-pdf-service.svc.cluster.local... | Patrón 2: ...Url: http://api-notificaciones.prod-notificaciones.svc.cluster.lo... | Patrón 2: ...rces__Url: http://rrhh-service.prod-rrhh-service.svc.cluster.loca... | Patrón 3: ...: http://cliente-servicio-api.prod-servicios-globales.svc.cluste... | Patrón 3: ...rl: http://productos-services.prod-servicios-globales.svc.cluste... | Patrón 3: ...l: http://payment-service-api.prod-payment-services.svc.cluster....
-
-
-    Embedding Error de validación [text/plain 963 bytes]
-
-      java.lang.AssertionError: Se encontraron 1 errores de validación. Consulta el detalle en los logs.
-	at com.confuturo.steps.YamlValidationSteps.afterScenario(YamlValidationSteps.java:48)
-
-
-===== ESCENARIO FALLIDO =====
+===== ESCENARIO EXITOSO =====
 Nombre: El archivo YAML debe tener la configuración de servicios correcta
-Error: 1bc179b1-7fa8-48b5-b0db-296a5fcbb2f3
+
+===== ESCENARIO EXITOSO =====
+Nombre: El archivo YAML debe tener la configuración de servicios correcta
 ]]></system-out>
-    <system-err><![CDATA[¡ERROR DE VALIDACIÓN! La palabra EXACTA 'prod' fue encontrada en el archivo pero NO debería estar presente. Total ocurrencias: 10. Contexto(s): Patrón 1: ...}} vault.hashicorp.com/role: "prod" service: type: ClusterIP ... | Patrón 2: ...l: http://cliente-servicio-api.prod-servicios-globales.svc.cluste... | Patrón 2: ...Url: http://productos-services.prod-servicios-globales.svc.cluste... | Patrón 2: ...rl: http://payment-service-api.prod-payment-services.svc.cluster.... | Patrón 2: ..._Pdf__Url : http://pdf-service.prod-pdf-service.svc.cluster.local... | Patrón 2: ...Url: http://api-notificaciones.prod-notificaciones.svc.cluster.lo... | Patrón 2: ...rces__Url: http://rrhh-service.prod-rrhh-service.svc.cluster.loca... | Patrón 3: ...: http://cliente-servicio-api.prod-servicios-globales.svc.cluste... | Patrón 3: ...rl: http://productos-services.prod-servicios-globales.svc.cluste... | Patrón 3: ...l: http://payment-service-api.prod-payment-services.svc.cluster....
-- La palabra EXACTA 'prod' fue encontrada en el archivo pero NO debería estar presente. Total ocurrencias: 10. Contexto(s): Patrón 1: ...}} vault.hashicorp.com/role: "prod" service: type: ClusterIP ... | Patrón 2: ...l: http://cliente-servicio-api.prod-servicios-globales.svc.cluste... | Patrón 2: ...Url: http://productos-services.prod-servicios-globales.svc.cluste... | Patrón 2: ...rl: http://payment-service-api.prod-payment-services.svc.cluster.... | Patrón 2: ..._Pdf__Url : http://pdf-service.prod-pdf-service.svc.cluster.local... | Patrón 2: ...Url: http://api-notificaciones.prod-notificaciones.svc.cluster.lo... | Patrón 2: ...rces__Url: http://rrhh-service.prod-rrhh-service.svc.cluster.loca... | Patrón 3: ...: http://cliente-servicio-api.prod-servicios-globales.svc.cluste... | Patrón 3: ...rl: http://productos-services.prod-servicios-globales.svc.cluste... | Patrón 3: ...l: http://payment-service-api.prod-payment-services.svc.cluster....
-]]></system-err>
   </testcase>
-  <testcase name="El archivo YAML de QA debe tener solo valores que hagan referencia a QA" classname="Validación de configuración de archivo yaml en ambiente de" time="2.069">
+  <testcase name="El archivo YAML de QA debe tener solo valores que hagan referencia a QA" classname="Validación de configuración de archivo yaml en ambiente de" time="3.479">
     <system-out><![CDATA[
 Escenario: El archivo YAML de QA debe tener solo valores que hagan referencia a QA                                                                         # src/test/resources/features/yaml-validation_qa.feature:8
 
@@ -1679,7 +1653,7 @@ Nombre: El archivo YAML de QA debe tener solo valores que hagan referencia a QA
 Nombre: El archivo YAML de QA debe tener solo valores que hagan referencia a QA
 ]]></system-out>
   </testcase>
-  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de configuración de archivo yaml en ambiente de" time="1.152">
+  <testcase name="El archivo YAML debe tener la configuración de servicios correcta" classname="Validación de configuración de archivo yaml en ambiente de" time="1.079">
     <system-out><![CDATA[
 Escenario: El archivo YAML debe tener la configuración de servicios correcta                                            # src/test/resources/features/yaml-validation_qa.feature:24
 

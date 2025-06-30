@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.confuturo.runners.CucumberRunner
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.784 s <<< FAILURE! - in com.confuturo.runners.CucumberRunner
-Validación de configuración de archivo json en ambiente de Produccion #2.El archivo YAML debe tener la configuración de servicios correcta  Time elapsed: 1.767 s  <<< FAILURE!
-java.lang.AssertionError: Se encontraron 1 errores de validación. Consulta el detalle en los logs.
-	at com.confuturo.steps.YamlValidationSteps.afterScenario(YamlValidationSteps.java:48)
-
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.814 s - in com.confuturo.runners.CucumberRunner
